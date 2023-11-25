@@ -17,7 +17,7 @@ $ make install
 ```bash 
 $ heimdalld init
 $ heimdalld init --chain=mainnet        Will init with genesis.json for mainnet
-$ heimdalld init --chain=mumbai         Will init with genesis.json for mumbai
+$ heimdalld init --chain=loki         Will init with genesis.json for loki
 ```
 ### Run-heimdall 
 ```bash 
@@ -27,7 +27,7 @@ $ heimdalld start
 ```
 $ heimdalld start                       Will start for mainnet by default
 $ heimdalld start --chain=mainnet       Will start for mainnet
-$ heimdalld start --chain=mumbai        Will start for mumbai
+$ heimdalld start --chain=loki        Will start for loki
 $ heimdalld start --chain=local         Will start for local with NewSelectionAlgoHeight = 0
 ```
 

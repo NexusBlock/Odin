@@ -40,9 +40,9 @@ const (
 	LogsWriterFileFlag     = "logs_writer_file"
 	SeedsFlag              = "seeds"
 
-	MainChain   = "mainnet"
-	MumbaiChain = "mumbai"
-	LocalChain  = "local"
+	MainChain  = "mainnet"
+	LokiChain  = "loki"
+	LocalChain = "local"
 
 	// heimdall-config flags
 	MainRPCUrlFlag               = "eth_rpc_url"
@@ -242,9 +242,9 @@ type ChainManagerAddressMigration struct {
 }
 
 var chainManagerAddressMigrations = map[string]map[int64]ChainManagerAddressMigration{
-	MainChain:   {},
-	MumbaiChain: {},
-	"default":   {},
+	MainChain: {},
+	LokiChain: {},
+	"default": {},
 }
 
 // Contracts
@@ -397,7 +397,7 @@ func InitHeimdallConfigWith(homeDir string, heimdallConfigFileFromFLag string) {
 		spanOverrideHeight = 8664000
 		newHexToStringAlgoHeight = 9266260
 		aalborgHeight = 15950759
-	case MumbaiChain:
+	case LokiChain:
 		newSelectionAlgoHeight = 282500
 		spanOverrideHeight = 10205000
 		newHexToStringAlgoHeight = 12048023
@@ -513,7 +513,7 @@ func GetAddress() []byte {
 
 // GetValidChains returns all the valid chains
 func GetValidChains() []string {
-	return []string{"mainnet", "mumbai", "local"}
+	return []string{"mainnet", "loki", "local"}
 }
 
 // GetNewSelectionAlgoHeight returns newSelectionAlgoHeight
@@ -959,7 +959,7 @@ func UpdateTendermintConfig(tendermintConfig *cfg.Config, v *viper.Viper) {
 		switch conf.Chain {
 		case MainChain:
 			tendermintConfig.P2P.Seeds = DefaultMainnetSeeds
-		case MumbaiChain:
+		case LokiChain:
 			tendermintConfig.P2P.Seeds = DefaultTestnetSeeds
 		}
 	}

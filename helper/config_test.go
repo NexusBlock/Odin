@@ -36,7 +36,7 @@ func TestHeimdallConfig(t *testing.T) {
 func TestHeimdallConfigNewSelectionAlgoHeight(t *testing.T) {
 	t.Parallel()
 
-	data := map[string]bool{"mumbai": false, "mainnet": false, "local": true}
+	data := map[string]bool{"loki": false, "mainnet": false, "local": true}
 	for chain, shouldBeZero := range data {
 		conf.BorRPCUrl = "" // allow config to be loaded again
 
@@ -56,11 +56,11 @@ func TestGetChainManagerAddressMigration(t *testing.T) {
 
 	newMaticContractAddress := "0x0000000000000000000000000000000000001234"
 
-	chainManagerAddressMigrations["mumbai"] = map[int64]ChainManagerAddressMigration{
+	chainManagerAddressMigrations["loki"] = map[int64]ChainManagerAddressMigration{
 		350: {MaticTokenAddress: hmTypes.HexToHeimdallAddress(newMaticContractAddress)},
 	}
 
-	viper.Set("chain", "mumbai")
+	viper.Set("chain", "loki")
 	InitHeimdallConfig(os.ExpandEnv("$HOME/.heimdalld"))
 
 	migration, found := GetChainManagerAddressMigration(350)
@@ -102,10 +102,10 @@ func TestHeimdallConfigUpdateTendermintConfig(t *testing.T) {
 	}
 
 	data := []teststruct{
-		{chain: "mumbai", viper: "viper", def: "default", value: "viper"},
-		{chain: "mumbai", viper: "viper", def: "", value: "viper"},
-		{chain: "mumbai", viper: "", def: "default", value: "default"},
-		{chain: "mumbai", viper: "", def: "", value: DefaultTestnetSeeds},
+		{chain: "loki", viper: "viper", def: "default", value: "viper"},
+		{chain: "loki", viper: "viper", def: "", value: "viper"},
+		{chain: "loki", viper: "", def: "default", value: "default"},
+		{chain: "loki", viper: "", def: "", value: DefaultTestnetSeeds},
 		{chain: "mainnet", viper: "viper", def: "default", value: "viper"},
 		{chain: "mainnet", viper: "viper", def: "", value: "viper"},
 		{chain: "mainnet", viper: "", def: "default", value: "default"},
