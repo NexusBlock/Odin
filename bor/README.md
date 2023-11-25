@@ -94,7 +94,7 @@ return k.AddNewSpan(ctx, newSpan)
 A validator can leverage the CLI to propose a span like so :
 
 ```
-heimdallcli tx bor propose-span --proposer <VALIDATOR ADDRESS> --start-block <BOR_START_BLOCK> --span-id <SPAN_ID> --bor-chain-id <BOR_CHAIN_ID>
+odincli tx bor propose-span --proposer <VALIDATOR ADDRESS> --start-block <BOR_START_BLOCK> --span-id <SPAN_ID> --bor-chain-id <BOR_CHAIN_ID>
 ```
 
 Or the REST server : 
@@ -111,7 +111,7 @@ One can run the following query commands from the bor module :
 
 via CLI
 ```
-heimdallcli query bor span --span-id=<SPAN_ID>
+odincli query bor span --span-id=<SPAN_ID>
 ```
 
 via REST
@@ -123,7 +123,7 @@ curl localhost:1317/bor/span/<SPAN_ID>
 
 via CLI
 ```
-heimdallcli query bor latest-span
+odincli query bor latest-span
 ```
 
 via REST
@@ -135,7 +135,7 @@ curl localhost:1317/bor/latest-span
 
 via CLI
 ```
-heimdallcli query bor params
+odincli query bor params
 ```
 
 via REST
@@ -147,14 +147,14 @@ curl localhost:1317/bor/params
 
 via CLI
 ```
-heimdallcli query bor spanlist --page=<PAGE_NUM> --limit=<LIMIT>
+odincli query bor spanlist --page=<PAGE_NUM> --limit=<LIMIT>
 ```
 
 * `next-span-seed` - Query the seed for the next span :
 
 via CLI
 ```
-heimdallcli query bor next-span-seed
+odincli query bor next-span-seed
 ```
 
 via REST
@@ -166,7 +166,7 @@ curl localhost:1317/bor/next-span-seed
 
 via CLI
 ```
-heimdallcli query bor propose-span --proposer <VALIDATOR ADDRESS> --start-block <BOR_START_BLOCK> --span-id <SPAN_ID> --bor-chain-id <BOR_CHAIN_ID>
+odincli query bor propose-span --proposer <VALIDATOR ADDRESS> --start-block <BOR_START_BLOCK> --span-id <SPAN_ID> --bor-chain-id <BOR_CHAIN_ID>
 ```
 
 via REST

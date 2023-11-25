@@ -232,7 +232,7 @@ testnet --v 4 --n 8 --output-dir ./output --starting-ip-address 192.168.10.2
 		"Home directory of the node's daemon configuration",
 	)
 
-	cmd.Flags().String(flagNodeCliHome, "heimdallcli",
+	cmd.Flags().String(flagNodeCliHome, "odincli",
 		"Home directory of the node's cli configuration",
 	)
 

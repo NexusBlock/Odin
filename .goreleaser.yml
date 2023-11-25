@@ -23,12 +23,12 @@ builds:
       - -s -w
       - -X github.com/maticnetwork/heimdall/version.Name=heimdall
       - -X github.com/maticnetwork/heimdall/version.ServerName=odind
-      - -X github.com/maticnetwork/heimdall/version.ClientName=heimdallcli
+      - -X github.com/maticnetwork/heimdall/version.ClientName=odincli
       - -X github.com/maticnetwork/heimdall/version.Version={{.Version}}
       - -X github.com/maticnetwork/heimdall/version.Commit={{.Commit}}
       - -X github.com/cosmos/cosmos-sdk/version.Name=heimdall
       - -X github.com/cosmos/cosmos-sdk/version.ServerName=odind
-      - -X github.com/cosmos/cosmos-sdk/version.ClientName=heimdallcli
+      - -X github.com/cosmos/cosmos-sdk/version.ClientName=odincli
       - -X github.com/cosmos/cosmos-sdk/version.Version={{.Version}}
       - -X github.com/cosmos/cosmos-sdk/version.Commit={{.Commit}}
   
@@ -56,12 +56,12 @@ builds:
       - -s -w -extldflags "-static"
       - -X github.com/maticnetwork/heimdall/version.Name=heimdall
       - -X github.com/maticnetwork/heimdall/version.ServerName=odind
-      - -X github.com/maticnetwork/heimdall/version.ClientName=heimdallcli
+      - -X github.com/maticnetwork/heimdall/version.ClientName=odincli
       - -X github.com/maticnetwork/heimdall/version.Version={{.Version}}
       - -X github.com/maticnetwork/heimdall/version.Commit={{.Commit}}
       - -X github.com/cosmos/cosmos-sdk/version.Name=heimdall
       - -X github.com/cosmos/cosmos-sdk/version.ServerName=odind
-      - -X github.com/cosmos/cosmos-sdk/version.ClientName=heimdallcli
+      - -X github.com/cosmos/cosmos-sdk/version.ClientName=odincli
       - -X github.com/cosmos/cosmos-sdk/version.Version={{.Version}}
       - -X github.com/cosmos/cosmos-sdk/version.Commit={{.Commit}}
 
@@ -79,21 +79,21 @@ builds:
       - -s -w -extldflags "-static"
       - -X github.com/maticnetwork/heimdall/version.Name=heimdall
       - -X github.com/maticnetwork/heimdall/version.ServerName=odind
-      - -X github.com/maticnetwork/heimdall/version.ClientName=heimdallcli
+      - -X github.com/maticnetwork/heimdall/version.ClientName=odincli
       - -X github.com/maticnetwork/heimdall/version.Version={{.Version}}
       - -X github.com/maticnetwork/heimdall/version.Commit={{.Commit}}
       - -X github.com/cosmos/cosmos-sdk/version.Name=heimdall
       - -X github.com/cosmos/cosmos-sdk/version.ServerName=odind
-      - -X github.com/cosmos/cosmos-sdk/version.ClientName=heimdallcli
+      - -X github.com/cosmos/cosmos-sdk/version.ClientName=odincli
       - -X github.com/cosmos/cosmos-sdk/version.Version={{.Version}}
       - -X github.com/cosmos/cosmos-sdk/version.Commit={{.Commit}}
 
-  # heimdallcli
+  # odincli
 
   - &xbuildcli
-    id: heimdallcli-darwin-amd64
-    main: ./cmd/heimdallcli
-    binary: heimdallcli
+    id: odincli-darwin-amd64
+    main: ./cmd/odincli
+    binary: odincli
     goos:
       - darwin
     goarch:
@@ -107,17 +107,17 @@ builds:
       - -s -w
       - -X github.com/maticnetwork/heimdall/version.Name=heimdall
       - -X github.com/maticnetwork/heimdall/version.ServerName=odind
-      - -X github.com/maticnetwork/heimdall/version.ClientName=heimdallcli
+      - -X github.com/maticnetwork/heimdall/version.ClientName=odincli
       - -X github.com/maticnetwork/heimdall/version.Version={{.Version}}
       - -X github.com/maticnetwork/heimdall/version.Commit={{.Commit}}
       - -X github.com/cosmos/cosmos-sdk/version.Name=heimdall
       - -X github.com/cosmos/cosmos-sdk/version.ServerName=odind
-      - -X github.com/cosmos/cosmos-sdk/version.ClientName=heimdallcli
+      - -X github.com/cosmos/cosmos-sdk/version.ClientName=odincli
       - -X github.com/cosmos/cosmos-sdk/version.Version={{.Version}}
       - -X github.com/cosmos/cosmos-sdk/version.Commit={{.Commit}}
   
   - <<: *xbuildcli
-    id: heimdallcli-darwin-arm64
+    id: odincli-darwin-arm64
     goos:
       - darwin
     goarch:
@@ -127,7 +127,7 @@ builds:
       - CXX=oa64-clang++
   
   - <<: *xbuildcli
-    id: heimdallcli-linux-amd64
+    id: odincli-linux-amd64
     goos:
       - linux
     goarch:
@@ -140,17 +140,17 @@ builds:
       - -linkmode external -extldflags "-static"
       - -X github.com/maticnetwork/heimdall/version.Name=heimdall
       - -X github.com/maticnetwork/heimdall/version.ServerName=odind
-      - -X github.com/maticnetwork/heimdall/version.ClientName=heimdallcli
+      - -X github.com/maticnetwork/heimdall/version.ClientName=odincli
       - -X github.com/maticnetwork/heimdall/version.Version={{.Version}}
       - -X github.com/maticnetwork/heimdall/version.Commit={{.Commit}}
       - -X github.com/cosmos/cosmos-sdk/version.Name=heimdall
       - -X github.com/cosmos/cosmos-sdk/version.ServerName=odind
-      - -X github.com/cosmos/cosmos-sdk/version.ClientName=heimdallcli
+      - -X github.com/cosmos/cosmos-sdk/version.ClientName=odincli
       - -X github.com/cosmos/cosmos-sdk/version.Version={{.Version}}
       - -X github.com/cosmos/cosmos-sdk/version.Commit={{.Commit}}
 
   - <<: *xbuildcli
-    id: heimdallcli-linux-arm64
+    id: odincli-linux-arm64
     goos:
       - linux
     goarch:
@@ -163,12 +163,12 @@ builds:
       - -linkmode external -extldflags "-static"
       - -X github.com/maticnetwork/heimdall/version.Name=heimdall
       - -X github.com/maticnetwork/heimdall/version.ServerName=odind
-      - -X github.com/maticnetwork/heimdall/version.ClientName=heimdallcli
+      - -X github.com/maticnetwork/heimdall/version.ClientName=odincli
       - -X github.com/maticnetwork/heimdall/version.Version={{.Version}}
       - -X github.com/maticnetwork/heimdall/version.Commit={{.Commit}}
       - -X github.com/cosmos/cosmos-sdk/version.Name=heimdall
       - -X github.com/cosmos/cosmos-sdk/version.ServerName=odind
-      - -X github.com/cosmos/cosmos-sdk/version.ClientName=heimdallcli
+      - -X github.com/cosmos/cosmos-sdk/version.ClientName=odincli
       - -X github.com/cosmos/cosmos-sdk/version.Version={{.Version}}
       - -X github.com/cosmos/cosmos-sdk/version.Commit={{.Commit}}
 
@@ -215,7 +215,7 @@ dockers:
     goarch: amd64
     ids:
       - odind-linux-amd64
-      - heimdallcli-linux-amd64
+      - odincli-linux-amd64
     build_flag_templates:
       - --platform=linux/amd64
     extra_files:
@@ -230,7 +230,7 @@ dockers:
     goarch: arm64
     ids:
       - odind-linux-arm64
-      - heimdallcli-linux-arm64
+      - odincli-linux-arm64
     build_flag_templates:
       - --platform=linux/arm64/v8
     extra_files:

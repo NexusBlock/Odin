@@ -3,5 +3,5 @@
 ###################
 # Remove heimdall installation
 ###################
-sudo rm -rf /usr/bin/heimdallcli
+sudo rm -rf /usr/bin/odincli
 sudo rm -rf /usr/bin/odind

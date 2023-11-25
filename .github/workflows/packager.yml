@@ -21,7 +21,7 @@ jobs:
       - name: Adding TAG to ENV
         run: echo "GIT_TAG=`echo $(git describe --tags --abbrev=0)`" >> $GITHUB_ENV
 
-      - name: Making odind / heimdallcli for ${{ env.ARCH }}
+      - name: Making odind / odincli for ${{ env.ARCH }}
         run: make build
         env:
           ARCH: amd64
@@ -34,22 +34,22 @@ jobs:
 
       - name: Copying  odind binary for amd64
         run: cp -rp build/odind packaging/deb/odind/usr/bin/
-      - name: Copying heimdallcli for amd64
-        run: cp -rp build/heimdallcli packaging/deb/odind/usr/bin/
+      - name: Copying odincli for amd64
+        run: cp -rp build/odincli packaging/deb/odind/usr/bin/
 
       - name: copying files over to create  package for binary only odind and heimdallci
         run: cp -rp packaging/deb/odind packaging/deb/odind-${{ env.GIT_TAG }}-${{ env.ARCH }}
         env:
           ARCH: amd64
-      - name: Building package for odind and heimdallcli standalone
+      - name: Building package for odind and odincli standalone
         run: dpkg-deb --build --root-owner-group packaging/deb/odind-${{ env.GIT_TAG }}-${{ env.ARCH }}
         env:
           ARCH: amd64
 
       - name: Removing odind binary from builds for profile purposes
         run: rm -rf packaging/deb/odind/usr/bin/odind
-      - name: Removing heimdallcli binary from builds for profile purposes
-        run: rm -rf packaging/deb/odind/usr/bin/heimdallcli
+      - name: Removing odincli binary from builds for profile purposes
+        run: rm -rf packaging/deb/odind/usr/bin/odincli
 
       - name: making directory structure for systemd
         run: mkdir -p packaging/deb/odind/lib/systemd/system
@@ -201,21 +201,21 @@ jobs:
       - name: Installing deps
         run: sudo apt-get install g++-aarch64-linux-gnu gcc-aarch64-linux-gnu
 
-      - name: Build odind / heimdallcli for ${{ env.ARCH }}
+      - name: Build odind / odincli for ${{ env.ARCH }}
         run: make build-arm
         env:
           ARCH: arm64
 
-      - name: Setting up heimdallcli for ${{ env.ARCH }}
-        run: cp -rp build/heimdallcli packaging/deb/odind/usr/bin/
+      - name: Setting up odincli for ${{ env.ARCH }}
+        run: cp -rp build/odincli packaging/deb/odind/usr/bin/
         env:
           ARCH: arm64
       - name: Remove config toml directory
         run: rm -rf packaging/deb/odind/var/lib/heimdall
       - name: Copying over odind
         run: cp -rp build/odind packaging/deb/odind/usr/bin/
-      - name: Setting up the heimdallcli control file for use with ${{ env.ARCH }}
-        run: cp -rp packaging/templates/package_scripts/control.heimdallcli.arm64 packaging/deb/heimdallcli/DEBIAN/control
+      - name: Setting up the odincli control file for use with ${{ env.ARCH }}
+        run: cp -rp packaging/templates/package_scripts/control.odincli.arm64 packaging/deb/odincli/DEBIAN/control
         env:
           ARCH: arm64
       - name: Adding a postrm for the profiles so not to remove heimdall
@@ -232,15 +232,15 @@ jobs:
         run: cp -rp packaging/templates/package_scripts/postinst.arm64 packaging/deb/odind-${{ env.GIT_TAG }}-${{ env.ARCH }}/DEBIAN/postinst
         env:
           ARCH: arm64
-      - name: Building package for odind and heimdallcli standalone for ${{ env.ARCH }}
+      - name: Building package for odind and odincli standalone for ${{ env.ARCH }}
         run: dpkg-deb --build --root-owner-group packaging/deb/odind-${{ env.GIT_TAG }}-${{ env.ARCH }}
         env:
           ARCH: arm64
 
       - name: Removing heimdall binary from builds for profile purposes
         run: rm -rf packaging/deb/odind/usr/bin/odind
-      - name: Removing heimdallcli binary from builds for profile purposes
-        run: rm -rf packaging/deb/odind/usr/bin/heimdallcli
+      - name: Removing odincli binary from builds for profile purposes
+        run: rm -rf packaging/deb/odind/usr/bin/odincli
 
       - name: Making directory structure for toml
         run: mkdir -p packaging/deb/odind/var/lib/heimdall

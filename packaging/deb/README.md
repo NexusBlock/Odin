@@ -24,7 +24,7 @@ TODO: removal/purge on removal using dpkg
 
 CLI:
 
-heimdallcli/
+odincli/
    DEBIAN/control
    DEBIAN/postinst
-   usr/local/bin/heimdallcli
+   usr/local/bin/odincli

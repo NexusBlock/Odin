@@ -5,12 +5,12 @@ COMMIT := $(shell git log -1 --format='%H')
 
 ldflags = -X github.com/maticnetwork/heimdall/version.Name=heimdall \
 		  -X github.com/maticnetwork/heimdall/version.ServerName=odind \
-		  -X github.com/maticnetwork/heimdall/version.ClientName=heimdallcli \
+		  -X github.com/maticnetwork/heimdall/version.ClientName=odincli \
 		  -X github.com/maticnetwork/heimdall/version.Version=$(VERSION) \
 		  -X github.com/maticnetwork/heimdall/version.Commit=$(COMMIT) \
 		  -X github.com/cosmos/cosmos-sdk/version.Name=heimdall \
 		  -X github.com/cosmos/cosmos-sdk/version.ServerName=odind \
-		  -X github.com/cosmos/cosmos-sdk/version.ClientName=heimdallcli \
+		  -X github.com/cosmos/cosmos-sdk/version.ClientName=odincli \
 		  -X github.com/cosmos/cosmos-sdk/version.Version=$(VERSION) \
 		  -X github.com/cosmos/cosmos-sdk/version.Commit=$(COMMIT)
 
@@ -28,13 +28,13 @@ tests:
 build: clean
 	mkdir -p build
 	go build $(BUILD_FLAGS) -o build/odind ./cmd/odind
-	go build $(BUILD_FLAGS) -o build/heimdallcli ./cmd/heimdallcli
+	go build $(BUILD_FLAGS) -o build/odincli ./cmd/odincli
 	@echo "====================================================\n==================Build Successful==================\n===================================================="
 
 # make install
 install:
 	go install $(BUILD_FLAGS) ./cmd/odind
-	go install $(BUILD_FLAGS) ./cmd/heimdallcli
+	go install $(BUILD_FLAGS) ./cmd/odincli
 
 contracts:
 	abigen --abi=contracts/rootchain/rootchain.abi --pkg=rootchain --out=contracts/rootchain/rootchain.go
@@ -49,7 +49,7 @@ contracts:
 build-arm: clean
 	mkdir -p build
 	env CGO_ENABLED=1 GOOS=linux GOARCH=arm64 CC=aarch64-linux-gnu-gcc CXX=aarch64-linux-gnu-g++ go build $(BUILD_FLAGS) -o build/odind ./cmd/odind
-	env CGO_ENABLED=1 GOOS=linux GOARCH=arm64 CC=aarch64-linux-gnu-gcc CXX=aarch64-linux-gnu-g++ go build $(BUILD_FLAGS) -o build/heimdallcli ./cmd/heimdallcli
+	env CGO_ENABLED=1 GOOS=linux GOARCH=arm64 CC=aarch64-linux-gnu-gcc CXX=aarch64-linux-gnu-g++ go build $(BUILD_FLAGS) -o build/odincli ./cmd/odincli
 	@echo "====================================================\n==================Build Successful==================\n===================================================="
 
 #

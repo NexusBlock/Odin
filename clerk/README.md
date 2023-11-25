@@ -75,7 +75,7 @@ Only when there is a majority of `YES` votes, The event will be processed by `Po
 A validator can leverage the CLI to add an event to the state in case it's missing and not processed by the bridge, The CLI command is :
 
 ```
-heimdallcli tx clerk record 
+odincli tx clerk record 
     --id <event-id>
     --contract <contract-address>
     --data <event-data>
@@ -98,11 +98,11 @@ One can run the following query commands from the clerk module :
 ### CLI commands
 
 ```
-heimdallcli query clerk record --id <event-id>
+odincli query clerk record --id <event-id>
 ```
 
 ```
-heimdallcli query clerk is-old-tx --tx-hash <tx-hash> --log-index <log-index>
+odincli query clerk is-old-tx --tx-hash <tx-hash> --log-index <log-index>
 ```
 
 ### REST endpoints

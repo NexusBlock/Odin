@@ -17,7 +17,7 @@ $ make install
 ```bash 
 $ odind init
 $ odind init --chain=mainnet        Will init with genesis.json for mainnet
-$ odind init --chain=loki         Will init with genesis.json for loki
+$ odind init --chain=loki           Will init with genesis.json for loki
 ```
 ### Run-heimdall 
 ```bash 

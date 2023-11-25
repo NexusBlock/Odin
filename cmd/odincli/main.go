@@ -41,12 +41,12 @@ import (
 	"github.com/maticnetwork/heimdall/helper"
 )
 
-var logger = helper.Logger.With("module", "cmd/heimdallcli")
+var logger = helper.Logger.With("module", "cmd/odincli")
 
 // rootCmd is the entry point for this binary
 var (
 	rootCmd = &cobra.Command{
-		Use:   "heimdallcli",
+		Use:   "odincli",
 		Short: "Heimdall light-client",
 		PersistentPreRunE: func(cmd *cobra.Command, args []string) error {
 			if cmd.Use != version.Cmd.Use {
