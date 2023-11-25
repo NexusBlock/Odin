@@ -1,6 +1,6 @@
 # Simple usage with a mounted data directory:
-# > docker build -t maticnetwork/heimdall:<tag> .
-# > docker run -it -p 26657:26657 -p 26656:26656 -v ~/.odind:/root/.odind maticnetwork/heimdall:<tag> odind init
+# > docker build -t nexusblock/heimdall:<tag> .
+# > docker run -it -p 26657:26657 -p 26656:26656 -v ~/.odind:/root/.odind nexusblock/heimdall:<tag> odind init
 
 # Start from a Debian image with the latest version of Go installed
 # and a workspace (GOPATH) configured at /go.

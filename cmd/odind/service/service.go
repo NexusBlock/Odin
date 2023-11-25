@@ -53,14 +53,14 @@ import (
 
 	ethCommon "github.com/ethereum/go-ethereum/common"
 
-	"github.com/maticnetwork/heimdall/app"
-	authTypes "github.com/maticnetwork/heimdall/auth/types"
-	bridgeCmd "github.com/maticnetwork/heimdall/bridge/cmd"
-	"github.com/maticnetwork/heimdall/helper"
-	restServer "github.com/maticnetwork/heimdall/server"
-	hmTypes "github.com/maticnetwork/heimdall/types"
-	hmModule "github.com/maticnetwork/heimdall/types/module"
-	"github.com/maticnetwork/heimdall/version"
+	"github.com/nexusblock/heimdall/app"
+	authTypes "github.com/nexusblock/heimdall/auth/types"
+	bridgeCmd "github.com/nexusblock/heimdall/bridge/cmd"
+	"github.com/nexusblock/heimdall/helper"
+	restServer "github.com/nexusblock/heimdall/server"
+	hmTypes "github.com/nexusblock/heimdall/types"
+	hmModule "github.com/nexusblock/heimdall/types/module"
+	"github.com/nexusblock/heimdall/version"
 )
 
 var logger = helper.Logger.With("module", "cmd/odind")

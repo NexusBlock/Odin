@@ -16,11 +16,11 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	ethcmn "github.com/ethereum/go-ethereum/common"
 
-	"github.com/maticnetwork/heimdall/checkpoint/types"
-	"github.com/maticnetwork/heimdall/helper"
-	stakingTypes "github.com/maticnetwork/heimdall/staking/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
-	hmRest "github.com/maticnetwork/heimdall/types/rest"
+	"github.com/nexusblock/heimdall/checkpoint/types"
+	"github.com/nexusblock/heimdall/helper"
+	stakingTypes "github.com/nexusblock/heimdall/staking/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
+	hmRest "github.com/nexusblock/heimdall/types/rest"
 )
 
 // It represents the checkpoint parameters

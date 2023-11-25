@@ -21,8 +21,8 @@ import (
 	logger "github.com/tendermint/tendermint/libs/log"
 	"github.com/tendermint/tendermint/privval"
 
-	"github.com/maticnetwork/heimdall/file"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/file"
+	hmTypes "github.com/nexusblock/heimdall/types"
 
 	cfg "github.com/tendermint/tendermint/config"
 	tmTypes "github.com/tendermint/tendermint/types"

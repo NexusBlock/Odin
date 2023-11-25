@@ -3,7 +3,7 @@ package clerk
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/maticnetwork/heimdall/clerk/types"
+	"github.com/nexusblock/heimdall/clerk/types"
 )
 
 // InitGenesis sets distribution information for genesis.

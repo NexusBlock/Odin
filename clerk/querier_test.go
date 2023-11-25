@@ -10,12 +10,12 @@ import (
 
 	ethTypes "github.com/ethereum/go-ethereum/core/types"
 
-	"github.com/maticnetwork/heimdall/app"
-	"github.com/maticnetwork/heimdall/clerk"
-	"github.com/maticnetwork/heimdall/clerk/types"
-	"github.com/maticnetwork/heimdall/helper/mocks"
-	hmTypes "github.com/maticnetwork/heimdall/types"
-	"github.com/maticnetwork/heimdall/types/simulation"
+	"github.com/nexusblock/heimdall/app"
+	"github.com/nexusblock/heimdall/clerk"
+	"github.com/nexusblock/heimdall/clerk/types"
+	"github.com/nexusblock/heimdall/helper/mocks"
+	hmTypes "github.com/nexusblock/heimdall/types"
+	"github.com/nexusblock/heimdall/types/simulation"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"

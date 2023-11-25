@@ -1,4 +1,4 @@
-//nolint
+// nolint
 package rest
 
 import (
@@ -9,13 +9,14 @@ import (
 	"github.com/cosmos/cosmos-sdk/client/context"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	bankTypes "github.com/maticnetwork/heimdall/bank/types"
-	restClient "github.com/maticnetwork/heimdall/client/rest"
-	"github.com/maticnetwork/heimdall/types"
-	"github.com/maticnetwork/heimdall/types/rest"
+	bankTypes "github.com/nexusblock/heimdall/bank/types"
+	restClient "github.com/nexusblock/heimdall/client/rest"
+	"github.com/nexusblock/heimdall/types"
+	"github.com/nexusblock/heimdall/types/rest"
 )
 
-//It represents transfer msg.
+// It represents transfer msg.
+//
 //swagger:response bankBalanceTransferResponse
 type bankBalanceTransferResponse struct {
 	//in:body
@@ -103,7 +104,9 @@ type BaseReq struct {
 // swagger:route POST /bank/accounts/{address}/transfers bank bankBalanceTransfer
 // It returns the prepared msg for the transfer of balance from one account to another.
 // responses:
-//   200: bankBalanceTransferResponse
+//
+//	200: bankBalanceTransferResponse
+//
 // SendRequestHandlerFn - http request handler to send coins to a address.
 func SendRequestHandlerFn(cliCtx context.CLIContext) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {

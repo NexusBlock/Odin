@@ -8,12 +8,12 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	authTypes "github.com/maticnetwork/heimdall/auth/types"
-	"github.com/maticnetwork/heimdall/common"
-	hmCommon "github.com/maticnetwork/heimdall/common"
-	"github.com/maticnetwork/heimdall/helper"
-	"github.com/maticnetwork/heimdall/staking/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	authTypes "github.com/nexusblock/heimdall/auth/types"
+	"github.com/nexusblock/heimdall/common"
+	hmCommon "github.com/nexusblock/heimdall/common"
+	"github.com/nexusblock/heimdall/helper"
+	"github.com/nexusblock/heimdall/staking/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmTypes "github.com/tendermint/tendermint/types"
 )

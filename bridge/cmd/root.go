@@ -14,8 +14,8 @@ import (
 	tendermintLogger "github.com/tendermint/tendermint/libs/log"
 	rpcserver "github.com/tendermint/tendermint/rpc/lib/server"
 
-	"github.com/maticnetwork/heimdall/helper"
-	"github.com/maticnetwork/heimdall/version"
+	"github.com/nexusblock/heimdall/helper"
+	"github.com/nexusblock/heimdall/version"
 )
 
 const (

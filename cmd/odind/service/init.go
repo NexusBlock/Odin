@@ -17,15 +17,15 @@ import (
 	"github.com/tendermint/tendermint/libs/common"
 	tmtime "github.com/tendermint/tendermint/types/time"
 
-	"github.com/maticnetwork/heimdall/app"
-	authTypes "github.com/maticnetwork/heimdall/auth/types"
-	borTypes "github.com/maticnetwork/heimdall/bor/types"
-	"github.com/maticnetwork/heimdall/helper"
-	slashingTypes "github.com/maticnetwork/heimdall/slashing/types"
-	stakingcli "github.com/maticnetwork/heimdall/staking/client/cli"
-	stakingTypes "github.com/maticnetwork/heimdall/staking/types"
-	topupTypes "github.com/maticnetwork/heimdall/topup/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/app"
+	authTypes "github.com/nexusblock/heimdall/auth/types"
+	"github.com/nexusblock/heimdall/helper"
+	borTypes "github.com/nexusblock/heimdall/kernel/types"
+	slashingTypes "github.com/nexusblock/heimdall/slashing/types"
+	stakingcli "github.com/nexusblock/heimdall/staking/client/cli"
+	stakingTypes "github.com/nexusblock/heimdall/staking/types"
+	topupTypes "github.com/nexusblock/heimdall/topup/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 type initHeimdallConfig struct {

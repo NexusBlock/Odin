@@ -11,9 +11,9 @@ import (
 	jsoniter "github.com/json-iterator/go"
 
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/maticnetwork/heimdall/staking/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
-	hmRest "github.com/maticnetwork/heimdall/types/rest"
+	"github.com/nexusblock/heimdall/staking/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
+	hmRest "github.com/nexusblock/heimdall/types/rest"
 )
 
 // It represents the staking total power

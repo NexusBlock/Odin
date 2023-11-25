@@ -8,10 +8,10 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmTypes "github.com/tendermint/tendermint/types"
 
-	"github.com/maticnetwork/heimdall/checkpoint/types"
-	"github.com/maticnetwork/heimdall/common"
-	"github.com/maticnetwork/heimdall/helper"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/checkpoint/types"
+	"github.com/nexusblock/heimdall/common"
+	"github.com/nexusblock/heimdall/helper"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 // NewSideTxHandler returns a side handler for "bank" type messages.

@@ -4,8 +4,8 @@ import (
 	"strconv"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/maticnetwork/heimdall/slashing/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/slashing/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 // InitGenesis initialize default parameters

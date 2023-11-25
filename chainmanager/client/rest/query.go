@@ -1,4 +1,4 @@
-//nolint
+// nolint
 package rest
 
 import (
@@ -8,10 +8,11 @@ import (
 	"github.com/cosmos/cosmos-sdk/client/context"
 	"github.com/cosmos/cosmos-sdk/types/rest"
 
-	chainTypes "github.com/maticnetwork/heimdall/chainmanager/types"
+	chainTypes "github.com/nexusblock/heimdall/chainmanager/types"
 )
 
-//It represents the bank balance of particluar account
+// It represents the bank balance of particluar account
+//
 //swagger:response chainManagerParamsResponse
 type chainManagerParamsResponse struct {
 	//in:body
@@ -46,7 +47,9 @@ type ContractAddresses struct {
 // swagger:route GET /chainmanager/params chain-manager chainManagerParams
 // It returns the chain-manager parameters
 // responses:
-//   200: chainManagerParamsResponse
+//
+//	200: chainManagerParamsResponse
+//
 // HTTP request handler to query the auth params values
 func paramsHandlerFn(cliCtx context.CLIContext) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {

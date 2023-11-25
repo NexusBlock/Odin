@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/maticnetwork/heimdall/helper"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/helper"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 // ValidateMilestone - Validates if milestone rootHash matches or not

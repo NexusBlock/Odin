@@ -9,10 +9,10 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/maticnetwork/heimdall/app"
-	"github.com/maticnetwork/heimdall/sidechannel"
-	"github.com/maticnetwork/heimdall/sidechannel/simulation"
-	"github.com/maticnetwork/heimdall/sidechannel/types"
+	"github.com/nexusblock/heimdall/app"
+	"github.com/nexusblock/heimdall/sidechannel"
+	"github.com/nexusblock/heimdall/sidechannel/simulation"
+	"github.com/nexusblock/heimdall/sidechannel/types"
 	abci "github.com/tendermint/tendermint/abci/types"
 )
 

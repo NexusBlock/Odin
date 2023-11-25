@@ -7,8 +7,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/x/auth/client/utils"
 
-	"github.com/maticnetwork/heimdall/gov/types"
-	"github.com/maticnetwork/heimdall/helper"
+	"github.com/nexusblock/heimdall/gov/types"
+	"github.com/nexusblock/heimdall/helper"
 )
 
 const (

@@ -1,6 +1,6 @@
 # Heimdall
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/maticnetwork/heimdall)](https://goreportcard.com/report/github.com/maticnetwork/heimdall) [![CircleCI](https://circleci.com/gh/maticnetwork/heimdall/tree/master.svg?style=shield)](https://circleci.com/gh/maticnetwork/heimdall/tree/master) [![GolangCI](https://golangci.com/badges/github.com/maticnetwork/heimdall.svg)](https://golangci.com/r/github.com/maticnetwork/heimdall)
+[![Go Report Card](https://goreportcard.com/badge/github.com/nexusblock/heimdall)](https://goreportcard.com/report/github.com/nexusblock/heimdall) [![CircleCI](https://circleci.com/gh/nexusblock/heimdall/tree/master.svg?style=shield)](https://circleci.com/gh/nexusblock/heimdall/tree/master) [![GolangCI](https://golangci.com/badges/github.com/nexusblock/heimdall.svg)](https://golangci.com/r/github.com/nexusblock/heimdall)
 
 
 Validator node for Matic Network. It uses peppermint, customized [Tendermint](https://github.com/tendermint/tendermint).
@@ -27,7 +27,7 @@ $ odind start
 ```
 $ odind start                       Will start for mainnet by default
 $ odind start --chain=mainnet       Will start for mainnet
-$ odind start --chain=loki        Will start for loki
+$ odind start --chain=loki          Will start for loki
 $ odind start --chain=local         Will start for local with NewSelectionAlgoHeight = 0
 ```
 

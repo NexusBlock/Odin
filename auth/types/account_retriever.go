@@ -3,7 +3,7 @@ package types
 import (
 	"fmt"
 
-	"github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/types"
 )
 
 var (

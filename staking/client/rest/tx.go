@@ -1,4 +1,4 @@
-//nolint
+// nolint
 package rest
 
 import (
@@ -8,13 +8,14 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/gorilla/mux"
 
-	restClient "github.com/maticnetwork/heimdall/client/rest"
-	"github.com/maticnetwork/heimdall/staking/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
-	"github.com/maticnetwork/heimdall/types/rest"
+	restClient "github.com/nexusblock/heimdall/client/rest"
+	"github.com/nexusblock/heimdall/staking/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
+	"github.com/nexusblock/heimdall/types/rest"
 )
 
-//It represents Propose Span msg.
+// It represents Propose Span msg.
+//
 //swagger:response stakingNewValidatorResponse
 type stakingNewValidatorResponse struct {
 	//in:body
@@ -49,7 +50,8 @@ type stakingNewValidatorVal struct {
 	Nonce           uint64 `json:"nonce"`
 }
 
-//It represents validator stake update msg
+// It represents validator stake update msg
+//
 //swagger:response stakingValidatorStakeUpdateResponse
 type stakingValidatorStakeUpdateResponse struct {
 	//in:body
@@ -82,7 +84,8 @@ type stakingValidatorStakeUpdateVal struct {
 	Nonce       uint64 `json:"nonce"`
 }
 
-//It represents validator update msg.
+// It represents validator update msg.
+//
 //swagger:response stakingValidatorUpdateResponse
 type stakingValidatorUpdateResponse struct {
 	//in:body
@@ -115,7 +118,8 @@ type stakingValidatorUpdateVal struct {
 	Nonce           uint64 `json:"nonce"`
 }
 
-//It represents validator deleting msg
+// It represents validator deleting msg
+//
 //swagger:response stakingValidatorDeleteResponse
 type stakingValidatorDeleteResponse struct {
 	//in:body
@@ -247,7 +251,8 @@ type BaseReq struct {
 // swagger:route POST /staking/validators staking stakingNewValidator
 // It returns the prepared msg for new validator joining
 // responses:
-//   200: stakingNewValidatorResponse
+//
+//	200: stakingNewValidatorResponse
 func newValidatorJoinHandler(cliCtx context.CLIContext) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		// read req from request
@@ -306,7 +311,8 @@ type stakingValidatorDeleteInput struct {
 // swagger:route DELETE /staking/validators staking stakingValidatorDelete
 // It returns the prepared msg for deleting the Validator
 // responses:
-//   200: stakingValidatorDeleteResponse
+//
+//	200: stakingValidatorDeleteResponse
 func newValidatorExitHandler(cliCtx context.CLIContext) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		// read req from request
@@ -358,7 +364,8 @@ type stakingValidatorUpdateInput struct {
 // swagger:route PUT /staking/validators staking stakingValidatorUpdate
 // It returns the prepared msg for updating the validator
 // responses:
-//   200: stakingValidatorUpdateResponse
+//
+//	200: stakingValidatorUpdateResponse
 func newValidatorUpdateHandler(cliCtx context.CLIContext) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		// read req from request

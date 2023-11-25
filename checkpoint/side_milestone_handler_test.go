@@ -8,12 +8,12 @@ import (
 	"github.com/stretchr/testify/suite"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	cmTypes "github.com/maticnetwork/heimdall/chainmanager/types"
-	chSim "github.com/maticnetwork/heimdall/checkpoint/simulation"
-	"github.com/maticnetwork/heimdall/checkpoint/types"
-	"github.com/maticnetwork/heimdall/common"
-	"github.com/maticnetwork/heimdall/helper"
-	"github.com/maticnetwork/heimdall/helper/mocks"
+	cmTypes "github.com/nexusblock/heimdall/chainmanager/types"
+	chSim "github.com/nexusblock/heimdall/checkpoint/simulation"
+	"github.com/nexusblock/heimdall/checkpoint/types"
+	"github.com/nexusblock/heimdall/common"
+	"github.com/nexusblock/heimdall/helper"
+	"github.com/nexusblock/heimdall/helper/mocks"
 )
 
 func TestMilestoneSideHandlerTestSuite(t *testing.T) {

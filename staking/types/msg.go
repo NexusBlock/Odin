@@ -6,10 +6,10 @@ import (
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	hmCommon "github.com/maticnetwork/heimdall/common"
-	"github.com/maticnetwork/heimdall/helper"
-	"github.com/maticnetwork/heimdall/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	hmCommon "github.com/nexusblock/heimdall/common"
+	"github.com/nexusblock/heimdall/helper"
+	"github.com/nexusblock/heimdall/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 var cdc = codec.New()

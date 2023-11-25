@@ -136,7 +136,7 @@
                 "bor_chain_id"
             ],
             "type": "object",
-            "x-go-package": "_/Users/vaibhavjindal/heimdall/bor/client/rest"
+            "x-go-package": "_/Users/vaibhavjindal/heimdall/kernel/client/rest"
         },
         "StdTx": {
             "properties": {
@@ -349,7 +349,7 @@
                 }
             },
             "type": "object",
-            "x-go-package": "_/Users/vaibhavjindal/heimdall/bor/client/rest"
+            "x-go-package": "_/Users/vaibhavjindal/heimdall/kernel/client/rest"
         },
         "borSpanList": {
             "properties": {
@@ -366,7 +366,7 @@
                 }
             },
             "type": "object",
-            "x-go-package": "_/Users/vaibhavjindal/heimdall/bor/client/rest"
+            "x-go-package": "_/Users/vaibhavjindal/heimdall/kernel/client/rest"
         },
         "borSpanParams": {
             "properties": {
@@ -379,7 +379,7 @@
                 }
             },
             "type": "object",
-            "x-go-package": "_/Users/vaibhavjindal/heimdall/bor/client/rest"
+            "x-go-package": "_/Users/vaibhavjindal/heimdall/kernel/client/rest"
         },
         "chainManager": {
             "properties": {
@@ -1346,7 +1346,7 @@
                 }
             },
             "type": "object",
-            "x-go-package": "_/Users/vaibhavjindal/heimdall/bor/client/rest"
+            "x-go-package": "_/Users/vaibhavjindal/heimdall/kernel/client/rest"
         },
         "output": {
             "properties": {
@@ -1359,7 +1359,7 @@
                 }
             },
             "type": "object",
-            "x-go-package": "_/Users/vaibhavjindal/heimdall/bor/client/rest"
+            "x-go-package": "_/Users/vaibhavjindal/heimdall/kernel/client/rest"
         },
         "overview": {
             "properties": {
@@ -1944,7 +1944,7 @@
                 }
             },
             "type": "object",
-            "x-go-package": "_/Users/vaibhavjindal/heimdall/bor/client/rest"
+            "x-go-package": "_/Users/vaibhavjindal/heimdall/kernel/client/rest"
         },
         "spanParams": {
             "properties": {
@@ -1968,7 +1968,7 @@
                 }
             },
             "type": "object",
-            "x-go-package": "_/Users/vaibhavjindal/heimdall/bor/client/rest"
+            "x-go-package": "_/Users/vaibhavjindal/heimdall/kernel/client/rest"
         },
         "spanSeed": {
             "properties": {
@@ -1982,7 +1982,7 @@
                 }
             },
             "type": "object",
-            "x-go-package": "_/Users/vaibhavjindal/heimdall/bor/client/rest"
+            "x-go-package": "_/Users/vaibhavjindal/heimdall/kernel/client/rest"
         },
         "stakingNewValidatorInput": {
             "properties": {
@@ -2844,7 +2844,7 @@
                 }
             },
             "type": "object",
-            "x-go-package": "_/Users/vaibhavjindal/heimdall/bor/client/rest"
+            "x-go-package": "_/Users/vaibhavjindal/heimdall/kernel/client/rest"
         },
         "validator": {
             "properties": {
@@ -2941,7 +2941,7 @@
                 }
             },
             "type": "object",
-            "x-go-package": "_/Users/vaibhavjindal/heimdall/bor/client/rest"
+            "x-go-package": "_/Users/vaibhavjindal/heimdall/kernel/client/rest"
         },
         "vote": {
             "properties": {
@@ -3090,7 +3090,7 @@
                 ]
             }
         },
-        "/bor/latest-span": {
+        "/kernel/latest-span": {
             "get": {
                 "description": "It returns the latest-span",
                 "operationId": "borSpanLatest",
@@ -3105,7 +3105,7 @@
                 ],
                 "responses": {
                     "200": {
-                        "$ref": "#/responses/borSpanResponse"
+                        "$ref": "#/responses/kernelSpanResponse"
                     }
                 },
                 "tags": [
@@ -3113,7 +3113,7 @@
                 ]
             }
         },
-        "/bor/next-span-seed": {
+        "/kernel/next-span-seed": {
             "get": {
                 "description": "It returns the seed for the next span",
                 "operationId": "borNextSpanSeed",
@@ -3128,7 +3128,7 @@
                 ],
                 "responses": {
                     "200": {
-                        "$ref": "#/responses/borNextSpanSeedRespose"
+                        "$ref": "#/responses/kernelNextSpanSeedRespose"
                     }
                 },
                 "tags": [
@@ -3136,7 +3136,7 @@
                 ]
             }
         },
-        "/bor/params": {
+        "/kernel/params": {
             "get": {
                 "description": "It returns the span parameters",
                 "operationId": "borSpanParams",
@@ -3151,7 +3151,7 @@
                 ],
                 "responses": {
                     "200": {
-                        "$ref": "#/responses/borSpanParamsResponse"
+                        "$ref": "#/responses/kernelSpanParamsResponse"
                     }
                 },
                 "tags": [
@@ -3159,7 +3159,7 @@
                 ]
             }
         },
-        "/bor/prepare-next-span": {
+        "/kernel/prepare-next-span": {
             "get": {
                 "description": "It returns the prepared next span",
                 "operationId": "borPrepareNextSpan",
@@ -3201,7 +3201,7 @@
                 ],
                 "responses": {
                     "200": {
-                        "$ref": "#/responses/borSpanResponse"
+                        "$ref": "#/responses/kernelSpanResponse"
                     }
                 },
                 "tags": [
@@ -3209,7 +3209,7 @@
                 ]
             }
         },
-        "/bor/propose-span": {
+        "/kernel/propose-span": {
             "post": {
                 "description": "It returns the prepared msg for proposing the span",
                 "operationId": "borProposeSpan",
@@ -3227,7 +3227,7 @@
                 ],
                 "responses": {
                     "200": {
-                        "$ref": "#/responses/borProposeSpanResponse"
+                        "$ref": "#/responses/kernelProposeSpanResponse"
                     }
                 },
                 "tags": [
@@ -3235,7 +3235,7 @@
                 ]
             }
         },
-        "/bor/span/{id}": {
+        "/kernel/span/{id}": {
             "get": {
                 "description": "It returns the span based on ID",
                 "operationId": "borSpanById",
@@ -3259,7 +3259,7 @@
                 ],
                 "responses": {
                     "200": {
-                        "$ref": "#/responses/borSpanResponse"
+                        "$ref": "#/responses/kernelSpanResponse"
                     }
                 },
                 "tags": [
@@ -3267,7 +3267,7 @@
                 ]
             }
         },
-        "/bor/span/list": {
+        "/kernel/span/list": {
             "get": {
                 "description": "It returns the list of Bor Span",
                 "operationId": "borSpanList",
@@ -3300,7 +3300,7 @@
                 ],
                 "responses": {
                     "200": {
-                        "$ref": "#/responses/borSpanListResponse"
+                        "$ref": "#/responses/kernelSpanListResponse"
                     }
                 },
                 "tags": [
@@ -5251,19 +5251,19 @@
         "borSpanListResponse": {
             "description": "It represents the list of spans",
             "schema": {
-                "$ref": "#/definitions/borSpanList"
+                "$ref": "#/definitions/kernelSpanList"
             }
         },
         "borSpanParamsResponse": {
             "description": "It represents the bor span parameters",
             "schema": {
-                "$ref": "#/definitions/borSpanParams"
+                "$ref": "#/definitions/kernelSpanParams"
             }
         },
         "borSpanResponse": {
             "description": "It represents the span",
             "schema": {
-                "$ref": "#/definitions/borSpan"
+                "$ref": "#/definitions/kernelSpan"
             }
         },
         "chainManagerParamsResponse": {

@@ -9,8 +9,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/maticnetwork/heimdall/app"
-	"github.com/maticnetwork/heimdall/types/simulation"
+	"github.com/nexusblock/heimdall/app"
+	"github.com/nexusblock/heimdall/types/simulation"
 )
 
 //

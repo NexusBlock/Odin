@@ -9,10 +9,10 @@ import (
 	"github.com/cosmos/cosmos-sdk/codec"
 	"github.com/spf13/cobra"
 
-	bankTypes "github.com/maticnetwork/heimdall/bank/types"
-	hmClient "github.com/maticnetwork/heimdall/client"
+	bankTypes "github.com/nexusblock/heimdall/bank/types"
+	hmClient "github.com/nexusblock/heimdall/client"
 
-	"github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/types"
 )
 
 // GetQueryCmd returns the cli query commands for this module

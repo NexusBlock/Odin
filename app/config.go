@@ -3,7 +3,7 @@ package app
 import (
 	"flag"
 
-	"github.com/maticnetwork/heimdall/types/simulation"
+	"github.com/nexusblock/heimdall/types/simulation"
 )
 
 // List of available flags for the simulator

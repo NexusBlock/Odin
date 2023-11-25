@@ -6,16 +6,16 @@ import (
 	"time"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/maticnetwork/heimdall/app"
+	"github.com/nexusblock/heimdall/app"
 
-	"github.com/maticnetwork/heimdall/helper"
+	"github.com/nexusblock/heimdall/helper"
 
-	chSim "github.com/maticnetwork/heimdall/checkpoint/simulation"
-	stakingSim "github.com/maticnetwork/heimdall/staking/simulation"
+	chSim "github.com/nexusblock/heimdall/checkpoint/simulation"
+	stakingSim "github.com/nexusblock/heimdall/staking/simulation"
 
-	"github.com/maticnetwork/heimdall/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
-	"github.com/maticnetwork/heimdall/types/simulation"
+	"github.com/nexusblock/heimdall/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
+	"github.com/nexusblock/heimdall/types/simulation"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 	"github.com/tendermint/tendermint/crypto/secp256k1"

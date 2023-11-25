@@ -11,12 +11,12 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/maticnetwork/heimdall/bor/types"
-	"github.com/maticnetwork/heimdall/chainmanager"
-	"github.com/maticnetwork/heimdall/helper"
-	"github.com/maticnetwork/heimdall/params/subspace"
-	"github.com/maticnetwork/heimdall/staking"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/chainmanager"
+	"github.com/nexusblock/heimdall/helper"
+	"github.com/nexusblock/heimdall/kernel/types"
+	"github.com/nexusblock/heimdall/params/subspace"
+	"github.com/nexusblock/heimdall/staking"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 var (

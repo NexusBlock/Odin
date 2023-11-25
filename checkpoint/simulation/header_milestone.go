@@ -3,7 +3,7 @@ package simulation
 import (
 	"time"
 
-	"github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/types"
 )
 
 // GenRandMilestone return headers

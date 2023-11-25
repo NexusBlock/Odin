@@ -7,9 +7,9 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/maticnetwork/heimdall/checkpoint/types"
-	"github.com/maticnetwork/heimdall/common"
-	"github.com/maticnetwork/heimdall/helper"
+	"github.com/nexusblock/heimdall/checkpoint/types"
+	"github.com/nexusblock/heimdall/common"
+	"github.com/nexusblock/heimdall/helper"
 )
 
 // handleMsgMilestone validates milestone transaction

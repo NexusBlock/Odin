@@ -8,11 +8,11 @@ import (
 	"time"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/maticnetwork/heimdall/app"
-	checkpointTypes "github.com/maticnetwork/heimdall/checkpoint/types"
-	"github.com/maticnetwork/heimdall/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
-	"github.com/maticnetwork/heimdall/types/simulation"
+	"github.com/nexusblock/heimdall/app"
+	checkpointTypes "github.com/nexusblock/heimdall/checkpoint/types"
+	"github.com/nexusblock/heimdall/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
+	"github.com/nexusblock/heimdall/types/simulation"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 )

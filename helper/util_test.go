@@ -7,9 +7,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	authTypes "github.com/maticnetwork/heimdall/auth/types"
-	"github.com/maticnetwork/heimdall/contracts/rootchain"
-	"github.com/maticnetwork/heimdall/types"
+	authTypes "github.com/nexusblock/heimdall/auth/types"
+	"github.com/nexusblock/heimdall/contracts/rootchain"
+	"github.com/nexusblock/heimdall/types"
 )
 
 func TestUnpackSigAndVotes(t *testing.T) {

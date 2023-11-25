@@ -7,12 +7,12 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/maticnetwork/heimdall/common"
-	"github.com/maticnetwork/heimdall/helper"
-	"github.com/maticnetwork/heimdall/slashing/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/common"
+	"github.com/nexusblock/heimdall/helper"
+	"github.com/nexusblock/heimdall/slashing/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
 
-	hmCommon "github.com/maticnetwork/heimdall/common"
+	hmCommon "github.com/nexusblock/heimdall/common"
 )
 
 // NewHandler creates an sdk.Handler for all the slashing type messages
@@ -141,9 +141,9 @@ func handleMsgUnjail(ctx sdk.Context, msg types.MsgUnjail, k Keeper, contractCal
 }
 
 /*
-	handleMsgTickAck - handle msg tick ack event
-	1. validate the tx hash in the event
-	2. flush the last tick slashing info
+handleMsgTickAck - handle msg tick ack event
+1. validate the tx hash in the event
+2. flush the last tick slashing info
 */
 func handleMsgTickAck(ctx sdk.Context, msg types.MsgTickAck, k Keeper, contractCaller helper.IContractCaller) sdk.Result {
 

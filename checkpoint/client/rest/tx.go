@@ -1,4 +1,4 @@
-//nolint
+// nolint
 package rest
 
 import (
@@ -8,13 +8,14 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/gorilla/mux"
 
-	"github.com/maticnetwork/heimdall/checkpoint/types"
-	restClient "github.com/maticnetwork/heimdall/client/rest"
-	hmTypes "github.com/maticnetwork/heimdall/types"
-	"github.com/maticnetwork/heimdall/types/rest"
+	"github.com/nexusblock/heimdall/checkpoint/types"
+	restClient "github.com/nexusblock/heimdall/client/rest"
+	hmTypes "github.com/nexusblock/heimdall/types"
+	"github.com/nexusblock/heimdall/types/rest"
 )
 
-//It represents New checkpoint msg.
+// It represents New checkpoint msg.
+//
 //swagger:response checkpointNewResponse
 type checkpointNewResponse struct {
 	//in:body
@@ -46,7 +47,8 @@ type checkpointNewVal struct {
 	BorChainId      string `json:"bor_chain_id"`
 }
 
-//It represents Propose Span msg.
+// It represents Propose Span msg.
+//
 //swagger:response checkpointAckResponse
 type checkpointAckResponse struct {
 	//in:body
@@ -80,7 +82,8 @@ type checkpointAckVal struct {
 	LogIndex   string `json:"log_index"`
 }
 
-//It represents Propose Span msg.
+// It represents Propose Span msg.
+//
 //swagger:response checkpointNoAckResponse
 type checkpointNoAckResponse struct {
 	//in:body

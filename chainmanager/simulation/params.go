@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"math/rand"
 
-	"github.com/maticnetwork/heimdall/chainmanager/types"
-	"github.com/maticnetwork/heimdall/simulation"
-	simtypes "github.com/maticnetwork/heimdall/types/simulation"
+	"github.com/nexusblock/heimdall/chainmanager/types"
+	"github.com/nexusblock/heimdall/simulation"
+	simtypes "github.com/nexusblock/heimdall/types/simulation"
 )
 
 const (

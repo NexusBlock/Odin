@@ -10,8 +10,8 @@
 ## Preliminary terminology
 
 * A `side-transaction` is a normal heimdall transaction but the data with which the message is composed needs to be voted on by the validators since the data is obscure to the consensus protocol itself and it has no way of validating the data's correctness.
-* A `sprint` comprises of 16 bor blocks (configured in [bor](https://github.com/maticnetwork/launch/blob/fe86ba6cd16e5c36067a5ae49c0bad62ce8b1c3f/mainnet-v1/sentry/validator/bor/genesis.json#L26C18-L28)).
-* A `span` comprises of 400 sprints in bor (check heimdall's bor [params](https://heimdall-api.polygon.technology/bor/params) endpoint ).
+* A `sprint` comprises of 16 bor blocks (configured in [bor](https://github.com/nexusblock/launch/blob/fe86ba6cd16e5c36067a5ae49c0bad62ce8b1c3f/mainnet-v1/sentry/validator/kernel/genesis.json#L26C18-L28)).
+* A `span` comprises of 400 sprints in bor (check heimdall's bor [params](https://heimdall-api.polygon.technology/kernel/params) endpoint ).
 
 ## Overview
 
@@ -100,7 +100,7 @@ odincli tx bor propose-span --proposer <VALIDATOR ADDRESS> --start-block <BOR_ST
 Or the REST server : 
 
 ```
-curl -X POST "localhost:1317/bor/propose-span?bor-chain-id=<BOR_CHAIN_ID>&start-block=<BOR_START_BLOCK>&span-id=<SPAN_ID>"
+curl -X POST "localhost:1317/kernel/propose-span?bor-chain-id=<BOR_CHAIN_ID>&start-block=<BOR_START_BLOCK>&span-id=<SPAN_ID>"
 ```
 
 ## Query commands
@@ -116,7 +116,7 @@ odincli query bor span --span-id=<SPAN_ID>
 
 via REST
 ```
-curl localhost:1317/bor/span/<SPAN_ID>
+curl localhost:1317/kernel/span/<SPAN_ID>
 ```
 
 * `latest span` - Query the latest span : 
@@ -128,7 +128,7 @@ odincli query bor latest-span
 
 via REST
 ```
-curl localhost:1317/bor/latest-span
+curl localhost:1317/kernel/latest-span
 ```
 
 * `params` - Fetch the parameters associated to bor module :
@@ -140,7 +140,7 @@ odincli query bor params
 
 via REST
 ```
-curl localhost:1317/bor/params
+curl localhost:1317/kernel/params
 ```
 
 * `spanlist` - Fetch span list :
@@ -159,7 +159,7 @@ odincli query bor next-span-seed
 
 via REST
 ```
-curl localhost:1317/bor/next-span-seed
+curl localhost:1317/kernel/next-span-seed
 ```
 
 * `propose-span` - Print the `propose-span` command :
@@ -171,5 +171,5 @@ odincli query bor propose-span --proposer <VALIDATOR ADDRESS> --start-block <BOR
 
 via REST
 ```
-curl "localhost:1317/bor/prepare-next-span?span_id=<SPAN_ID>&start_block=<BOR_START_BLOCK>&chain_id="<BOR_CHAIN_ID>""
+curl "localhost:1317/kernel/prepare-next-span?span_id=<SPAN_ID>&start_block=<BOR_START_BLOCK>&chain_id="<BOR_CHAIN_ID>""
 ```

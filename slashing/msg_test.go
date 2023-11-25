@@ -4,9 +4,9 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"github.com/maticnetwork/heimdall/helper"
-	slashingTypes "github.com/maticnetwork/heimdall/slashing/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/helper"
+	slashingTypes "github.com/nexusblock/heimdall/slashing/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 func TestMsgTick(t *testing.T) {

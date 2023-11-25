@@ -10,7 +10,7 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	"github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/types"
 )
 
 type mockValidator struct {

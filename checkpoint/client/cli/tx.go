@@ -15,11 +15,11 @@ import (
 	"github.com/spf13/viper"
 
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/maticnetwork/heimdall/bridge/setu/util"
-	"github.com/maticnetwork/heimdall/checkpoint/types"
-	hmClient "github.com/maticnetwork/heimdall/client"
-	"github.com/maticnetwork/heimdall/helper"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/bridge/setu/util"
+	"github.com/nexusblock/heimdall/checkpoint/types"
+	hmClient "github.com/nexusblock/heimdall/client"
+	"github.com/nexusblock/heimdall/helper"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 var logger = helper.Logger.With("module", "checkpoint/client/cli")

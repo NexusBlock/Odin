@@ -12,13 +12,13 @@ import (
 	"github.com/spf13/cobra"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	bankCli "github.com/maticnetwork/heimdall/bank/client/cli"
-	bankRest "github.com/maticnetwork/heimdall/bank/client/rest"
-	"github.com/maticnetwork/heimdall/bank/simulation"
-	"github.com/maticnetwork/heimdall/bank/types"
-	"github.com/maticnetwork/heimdall/helper"
-	hmModule "github.com/maticnetwork/heimdall/types/module"
-	simTypes "github.com/maticnetwork/heimdall/types/simulation"
+	bankCli "github.com/nexusblock/heimdall/bank/client/cli"
+	bankRest "github.com/nexusblock/heimdall/bank/client/rest"
+	"github.com/nexusblock/heimdall/bank/simulation"
+	"github.com/nexusblock/heimdall/bank/types"
+	"github.com/nexusblock/heimdall/helper"
+	hmModule "github.com/nexusblock/heimdall/types/module"
+	simTypes "github.com/nexusblock/heimdall/types/simulation"
 )
 
 var (

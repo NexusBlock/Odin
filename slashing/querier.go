@@ -10,9 +10,9 @@ import (
 	jsoniter "github.com/json-iterator/go"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/maticnetwork/heimdall/helper"
-	"github.com/maticnetwork/heimdall/slashing/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/helper"
+	"github.com/nexusblock/heimdall/slashing/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 // NewQuerier creates a new querier for slashing clients.

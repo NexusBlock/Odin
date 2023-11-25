@@ -6,9 +6,9 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/maticnetwork/heimdall/app"
-	"github.com/maticnetwork/heimdall/checkpoint"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/app"
+	"github.com/nexusblock/heimdall/checkpoint"
+	hmTypes "github.com/nexusblock/heimdall/types"
 
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"

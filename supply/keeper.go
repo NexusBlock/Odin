@@ -7,11 +7,11 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/tendermint/tendermint/libs/log"
 
-	auth "github.com/maticnetwork/heimdall/auth"
-	bank "github.com/maticnetwork/heimdall/bank"
-	"github.com/maticnetwork/heimdall/params/subspace"
-	supplyTypes "github.com/maticnetwork/heimdall/supply/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	auth "github.com/nexusblock/heimdall/auth"
+	bank "github.com/nexusblock/heimdall/bank"
+	"github.com/nexusblock/heimdall/params/subspace"
+	supplyTypes "github.com/nexusblock/heimdall/supply/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 // Keys for supply store

@@ -5,7 +5,7 @@ import (
 
 	jsoniter "github.com/json-iterator/go"
 
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 // Vote represents vote from validator

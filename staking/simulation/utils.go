@@ -4,7 +4,7 @@ import (
 	"crypto/rand"
 	"math/big"
 
-	"github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/types"
 	"github.com/tendermint/tendermint/crypto/secp256k1"
 )
 

@@ -5,9 +5,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/tendermint/tendermint/libs/log"
 
-	"github.com/maticnetwork/heimdall/chainmanager/types"
-	"github.com/maticnetwork/heimdall/helper"
-	"github.com/maticnetwork/heimdall/params/subspace"
+	"github.com/nexusblock/heimdall/chainmanager/types"
+	"github.com/nexusblock/heimdall/helper"
+	"github.com/nexusblock/heimdall/params/subspace"
 )
 
 // Keeper stores all related data

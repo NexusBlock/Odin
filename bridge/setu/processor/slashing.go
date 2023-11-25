@@ -12,13 +12,13 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/types"
 
-	authTypes "github.com/maticnetwork/heimdall/auth/types"
-	"github.com/maticnetwork/heimdall/bridge/setu/util"
-	chainmanagerTypes "github.com/maticnetwork/heimdall/chainmanager/types"
-	"github.com/maticnetwork/heimdall/contracts/stakinginfo"
-	"github.com/maticnetwork/heimdall/helper"
-	slashingTypes "github.com/maticnetwork/heimdall/slashing/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	authTypes "github.com/nexusblock/heimdall/auth/types"
+	"github.com/nexusblock/heimdall/bridge/setu/util"
+	chainmanagerTypes "github.com/nexusblock/heimdall/chainmanager/types"
+	"github.com/nexusblock/heimdall/contracts/stakinginfo"
+	"github.com/nexusblock/heimdall/helper"
+	slashingTypes "github.com/nexusblock/heimdall/slashing/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 // SlashingProcessor - process slashing related events

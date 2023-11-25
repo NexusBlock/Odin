@@ -10,14 +10,14 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/maticnetwork/heimdall/app"
-	cmTypes "github.com/maticnetwork/heimdall/chainmanager/types"
-	"github.com/maticnetwork/heimdall/checkpoint"
-	chSim "github.com/maticnetwork/heimdall/checkpoint/simulation"
-	"github.com/maticnetwork/heimdall/checkpoint/types"
-	errs "github.com/maticnetwork/heimdall/common"
-	"github.com/maticnetwork/heimdall/helper/mocks"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/app"
+	cmTypes "github.com/nexusblock/heimdall/chainmanager/types"
+	"github.com/nexusblock/heimdall/checkpoint"
+	chSim "github.com/nexusblock/heimdall/checkpoint/simulation"
+	"github.com/nexusblock/heimdall/checkpoint/types"
+	errs "github.com/nexusblock/heimdall/common"
+	"github.com/nexusblock/heimdall/helper/mocks"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 type HandlerTestSuite struct {

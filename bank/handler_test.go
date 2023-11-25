@@ -4,12 +4,12 @@ import (
 	"testing"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/maticnetwork/heimdall/app"
-	authTypes "github.com/maticnetwork/heimdall/auth/types"
-	"github.com/maticnetwork/heimdall/bank"
-	"github.com/maticnetwork/heimdall/bank/types"
-	"github.com/maticnetwork/heimdall/helper/mocks"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/app"
+	authTypes "github.com/nexusblock/heimdall/auth/types"
+	"github.com/nexusblock/heimdall/bank"
+	"github.com/nexusblock/heimdall/bank/types"
+	"github.com/nexusblock/heimdall/helper/mocks"
+	hmTypes "github.com/nexusblock/heimdall/types"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 )

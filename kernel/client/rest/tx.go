@@ -13,10 +13,10 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/maticnetwork/heimdall/bor/types"
-	restClient "github.com/maticnetwork/heimdall/client/rest"
-	hmTypes "github.com/maticnetwork/heimdall/types"
-	"github.com/maticnetwork/heimdall/types/rest"
+	restClient "github.com/nexusblock/heimdall/client/rest"
+	"github.com/nexusblock/heimdall/kernel/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
+	"github.com/nexusblock/heimdall/types/rest"
 )
 
 // It represents Propose Span msg.
@@ -54,7 +54,7 @@ type val struct {
 
 func registerTxRoutes(cliCtx context.CLIContext, r *mux.Router) {
 	r.HandleFunc(
-		"/bor/propose-span",
+		"/kernel/propose-span",
 		postProposeSpanHandlerFn(cliCtx),
 	).Methods("POST")
 }
@@ -109,7 +109,7 @@ type BaseReq struct {
 	ChainID string `json:"chain_id"`
 }
 
-// swagger:route POST /bor/propose-span bor borProposeSpan
+// swagger:route POST /kernel/propose-span bor borProposeSpan
 // It returns the prepared msg for proposing the span
 // responses:
 //   200: borProposeSpanResponse

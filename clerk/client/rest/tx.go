@@ -1,4 +1,4 @@
-//nolint
+// nolint
 package rest
 
 import (
@@ -8,15 +8,16 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/gorilla/mux"
 
-	"github.com/maticnetwork/heimdall/bridge/setu/util"
-	clerkTypes "github.com/maticnetwork/heimdall/clerk/types"
-	restClient "github.com/maticnetwork/heimdall/client/rest"
-	"github.com/maticnetwork/heimdall/helper"
-	"github.com/maticnetwork/heimdall/types"
-	"github.com/maticnetwork/heimdall/types/rest"
+	"github.com/nexusblock/heimdall/bridge/setu/util"
+	clerkTypes "github.com/nexusblock/heimdall/clerk/types"
+	restClient "github.com/nexusblock/heimdall/client/rest"
+	"github.com/nexusblock/heimdall/helper"
+	"github.com/nexusblock/heimdall/types"
+	"github.com/nexusblock/heimdall/types/rest"
 )
 
-//It represents New checkpoint msg.
+// It represents New checkpoint msg.
+//
 //swagger:response clerkNewEventResponse
 type clerkNewEventResponse struct {
 	//in:body

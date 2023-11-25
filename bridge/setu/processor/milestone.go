@@ -8,13 +8,13 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/maticnetwork/heimdall/bridge/setu/util"
-	chainmanagerTypes "github.com/maticnetwork/heimdall/chainmanager/types"
-	milestoneTypes "github.com/maticnetwork/heimdall/checkpoint/types"
-	"github.com/maticnetwork/heimdall/helper"
+	"github.com/nexusblock/heimdall/bridge/setu/util"
+	chainmanagerTypes "github.com/nexusblock/heimdall/chainmanager/types"
+	milestoneTypes "github.com/nexusblock/heimdall/checkpoint/types"
+	"github.com/nexusblock/heimdall/helper"
 	"github.com/pborman/uuid"
 
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 // milestoneProcessor - process milestone related events

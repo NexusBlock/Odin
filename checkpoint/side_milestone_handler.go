@@ -7,11 +7,11 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmTypes "github.com/tendermint/tendermint/types"
 
-	cmTypes "github.com/maticnetwork/heimdall/chainmanager/types"
-	"github.com/maticnetwork/heimdall/checkpoint/types"
-	"github.com/maticnetwork/heimdall/common"
-	"github.com/maticnetwork/heimdall/helper"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	cmTypes "github.com/nexusblock/heimdall/chainmanager/types"
+	"github.com/nexusblock/heimdall/checkpoint/types"
+	"github.com/nexusblock/heimdall/common"
+	"github.com/nexusblock/heimdall/helper"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 // SideHandleMsgMilestone handles MsgMilestone message for external call

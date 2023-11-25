@@ -7,9 +7,9 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/maticnetwork/heimdall/bor/types"
-	"github.com/maticnetwork/heimdall/helper"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/helper"
+	"github.com/nexusblock/heimdall/kernel/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 // XXXSelectNextProducers selects producers for next span by converting power to tickets

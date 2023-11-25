@@ -14,17 +14,17 @@ import (
 	"github.com/spf13/cobra"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	chainmanagerTypes "github.com/maticnetwork/heimdall/chainmanager/types"
-	checkpointCli "github.com/maticnetwork/heimdall/checkpoint/client/cli"
-	checkpointRest "github.com/maticnetwork/heimdall/checkpoint/client/rest"
-	"github.com/maticnetwork/heimdall/checkpoint/simulation"
-	"github.com/maticnetwork/heimdall/checkpoint/types"
-	"github.com/maticnetwork/heimdall/helper"
-	"github.com/maticnetwork/heimdall/staking"
-	"github.com/maticnetwork/heimdall/topup"
-	hmTypes "github.com/maticnetwork/heimdall/types"
-	hmModule "github.com/maticnetwork/heimdall/types/module"
-	simTypes "github.com/maticnetwork/heimdall/types/simulation"
+	chainmanagerTypes "github.com/nexusblock/heimdall/chainmanager/types"
+	checkpointCli "github.com/nexusblock/heimdall/checkpoint/client/cli"
+	checkpointRest "github.com/nexusblock/heimdall/checkpoint/client/rest"
+	"github.com/nexusblock/heimdall/checkpoint/simulation"
+	"github.com/nexusblock/heimdall/checkpoint/types"
+	"github.com/nexusblock/heimdall/helper"
+	"github.com/nexusblock/heimdall/staking"
+	"github.com/nexusblock/heimdall/topup"
+	hmTypes "github.com/nexusblock/heimdall/types"
+	hmModule "github.com/nexusblock/heimdall/types/module"
+	simTypes "github.com/nexusblock/heimdall/types/simulation"
 )
 
 var (

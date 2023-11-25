@@ -14,12 +14,12 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	"github.com/maticnetwork/heimdall/checkpoint/types"
-	hmClient "github.com/maticnetwork/heimdall/client"
-	"github.com/maticnetwork/heimdall/helper"
-	stakingTypes "github.com/maticnetwork/heimdall/staking/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
-	"github.com/maticnetwork/heimdall/version"
+	"github.com/nexusblock/heimdall/checkpoint/types"
+	hmClient "github.com/nexusblock/heimdall/client"
+	"github.com/nexusblock/heimdall/helper"
+	stakingTypes "github.com/nexusblock/heimdall/staking/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
+	"github.com/nexusblock/heimdall/version"
 )
 
 var cliLogger = helper.Logger.With("module", "checkpoint/client/cli")

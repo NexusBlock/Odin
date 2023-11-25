@@ -17,15 +17,15 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/maticnetwork/heimdall/app"
-	authTypes "github.com/maticnetwork/heimdall/auth/types"
-	authTypesMocks "github.com/maticnetwork/heimdall/auth/types/mocks"
-	"github.com/maticnetwork/heimdall/bridge/setu/broadcaster"
-	"github.com/maticnetwork/heimdall/bridge/setu/listener"
-	"github.com/maticnetwork/heimdall/bridge/setu/queue"
-	"github.com/maticnetwork/heimdall/bridge/setu/util"
-	"github.com/maticnetwork/heimdall/helper"
-	helperMocks "github.com/maticnetwork/heimdall/helper/mocks"
+	"github.com/nexusblock/heimdall/app"
+	authTypes "github.com/nexusblock/heimdall/auth/types"
+	authTypesMocks "github.com/nexusblock/heimdall/auth/types/mocks"
+	"github.com/nexusblock/heimdall/bridge/setu/broadcaster"
+	"github.com/nexusblock/heimdall/bridge/setu/listener"
+	"github.com/nexusblock/heimdall/bridge/setu/queue"
+	"github.com/nexusblock/heimdall/bridge/setu/util"
+	"github.com/nexusblock/heimdall/helper"
+	helperMocks "github.com/nexusblock/heimdall/helper/mocks"
 )
 
 const (

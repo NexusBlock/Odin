@@ -13,15 +13,15 @@ import (
 	"github.com/spf13/cobra"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	chainmanagerTypes "github.com/maticnetwork/heimdall/chainmanager/types"
-	"github.com/maticnetwork/heimdall/helper"
-	stakingCli "github.com/maticnetwork/heimdall/staking/client/cli"
-	stakingRest "github.com/maticnetwork/heimdall/staking/client/rest"
-	"github.com/maticnetwork/heimdall/staking/simulation"
-	"github.com/maticnetwork/heimdall/staking/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
-	hmModule "github.com/maticnetwork/heimdall/types/module"
-	simTypes "github.com/maticnetwork/heimdall/types/simulation"
+	chainmanagerTypes "github.com/nexusblock/heimdall/chainmanager/types"
+	"github.com/nexusblock/heimdall/helper"
+	stakingCli "github.com/nexusblock/heimdall/staking/client/cli"
+	stakingRest "github.com/nexusblock/heimdall/staking/client/rest"
+	"github.com/nexusblock/heimdall/staking/simulation"
+	"github.com/nexusblock/heimdall/staking/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
+	hmModule "github.com/nexusblock/heimdall/types/module"
+	simTypes "github.com/nexusblock/heimdall/types/simulation"
 )
 
 var (

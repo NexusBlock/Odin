@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/maticnetwork/heimdall/helper"
-	"github.com/maticnetwork/heimdall/params/subspace"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/helper"
+	"github.com/nexusblock/heimdall/params/subspace"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 // Default parameter values

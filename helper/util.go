@@ -35,10 +35,10 @@ import (
 	"github.com/tendermint/tendermint/crypto/tmhash"
 	tmTypes "github.com/tendermint/tendermint/types"
 
-	authTypes "github.com/maticnetwork/heimdall/auth/types"
-	"github.com/maticnetwork/heimdall/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
-	"github.com/maticnetwork/heimdall/types/rest"
+	authTypes "github.com/nexusblock/heimdall/auth/types"
+	"github.com/nexusblock/heimdall/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
+	"github.com/nexusblock/heimdall/types/rest"
 )
 
 //go:generate mockgen -destination=./mocks/http_client_mock.go -package=mocks . HTTPClient

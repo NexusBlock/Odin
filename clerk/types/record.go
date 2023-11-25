@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/types"
 )
 
 // EventRecord represents state record

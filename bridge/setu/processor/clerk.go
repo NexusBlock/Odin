@@ -13,13 +13,13 @@ import (
 	"github.com/ethereum/go-ethereum/accounts/abi"
 	"github.com/ethereum/go-ethereum/core/types"
 
-	"github.com/maticnetwork/heimdall/bridge/setu/util"
-	chainmanagerTypes "github.com/maticnetwork/heimdall/chainmanager/types"
-	clerkTypes "github.com/maticnetwork/heimdall/clerk/types"
-	"github.com/maticnetwork/heimdall/common/tracing"
-	"github.com/maticnetwork/heimdall/contracts/statesender"
-	"github.com/maticnetwork/heimdall/helper"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/bridge/setu/util"
+	chainmanagerTypes "github.com/nexusblock/heimdall/chainmanager/types"
+	clerkTypes "github.com/nexusblock/heimdall/clerk/types"
+	"github.com/nexusblock/heimdall/common/tracing"
+	"github.com/nexusblock/heimdall/contracts/statesender"
+	"github.com/nexusblock/heimdall/helper"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 // ClerkContext for bridge

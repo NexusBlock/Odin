@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"regexp"
 
-	"github.com/maticnetwork/heimdall/gov/types"
+	"github.com/nexusblock/heimdall/gov/types"
 )
 
 var (

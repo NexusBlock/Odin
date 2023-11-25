@@ -7,7 +7,7 @@ import (
 
 	"github.com/spf13/viper"
 
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
 
 	cfg "github.com/tendermint/tendermint/config"
 )

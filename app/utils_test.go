@@ -8,8 +8,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 
-	authTypes "github.com/maticnetwork/heimdall/auth/types"
-	hmModule "github.com/maticnetwork/heimdall/types/module"
+	authTypes "github.com/nexusblock/heimdall/auth/types"
+	hmModule "github.com/nexusblock/heimdall/types/module"
 )
 
 func TestGetSimulationLog(t *testing.T) {

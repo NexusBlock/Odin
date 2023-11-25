@@ -15,19 +15,19 @@ import (
 
 	"github.com/tendermint/tendermint/crypto/secp256k1"
 
-	"github.com/maticnetwork/heimdall/app"
-	chSim "github.com/maticnetwork/heimdall/checkpoint/simulation"
-	errs "github.com/maticnetwork/heimdall/common"
-	"github.com/maticnetwork/heimdall/contracts/stakinginfo"
-	"github.com/maticnetwork/heimdall/helper"
-	"github.com/maticnetwork/heimdall/helper/mocks"
-	"github.com/maticnetwork/heimdall/staking"
-	stakingSim "github.com/maticnetwork/heimdall/staking/simulation"
-	"github.com/maticnetwork/heimdall/staking/types"
-	"github.com/maticnetwork/heimdall/topup"
-	topupTypes "github.com/maticnetwork/heimdall/topup/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
-	"github.com/maticnetwork/heimdall/types/simulation"
+	"github.com/nexusblock/heimdall/app"
+	chSim "github.com/nexusblock/heimdall/checkpoint/simulation"
+	errs "github.com/nexusblock/heimdall/common"
+	"github.com/nexusblock/heimdall/contracts/stakinginfo"
+	"github.com/nexusblock/heimdall/helper"
+	"github.com/nexusblock/heimdall/helper/mocks"
+	"github.com/nexusblock/heimdall/staking"
+	stakingSim "github.com/nexusblock/heimdall/staking/simulation"
+	"github.com/nexusblock/heimdall/staking/types"
+	"github.com/nexusblock/heimdall/topup"
+	topupTypes "github.com/nexusblock/heimdall/topup/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
+	"github.com/nexusblock/heimdall/types/simulation"
 )
 
 type HandlerTestSuite struct {

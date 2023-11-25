@@ -3,8 +3,8 @@ package bor
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/maticnetwork/heimdall/bor/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/kernel/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 // InitGenesis sets distribution information for genesis.

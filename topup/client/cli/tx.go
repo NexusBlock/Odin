@@ -12,10 +12,10 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	hmClient "github.com/maticnetwork/heimdall/client"
-	"github.com/maticnetwork/heimdall/helper"
-	topupTypes "github.com/maticnetwork/heimdall/topup/types"
-	"github.com/maticnetwork/heimdall/types"
+	hmClient "github.com/nexusblock/heimdall/client"
+	"github.com/nexusblock/heimdall/helper"
+	topupTypes "github.com/nexusblock/heimdall/topup/types"
+	"github.com/nexusblock/heimdall/types"
 )
 
 var cliLogger = helper.Logger.With("module", "topup/client/cli")

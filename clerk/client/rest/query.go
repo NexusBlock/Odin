@@ -11,10 +11,10 @@ import (
 	"github.com/gorilla/mux"
 	jsoniter "github.com/json-iterator/go"
 
-	"github.com/maticnetwork/heimdall/clerk/types"
-	"github.com/maticnetwork/heimdall/helper"
-	hmTypes "github.com/maticnetwork/heimdall/types"
-	hmRest "github.com/maticnetwork/heimdall/types/rest"
+	"github.com/nexusblock/heimdall/clerk/types"
+	"github.com/nexusblock/heimdall/helper"
+	hmTypes "github.com/nexusblock/heimdall/types"
+	hmRest "github.com/nexusblock/heimdall/types/rest"
 )
 
 //swagger:response clerkEventListResponse

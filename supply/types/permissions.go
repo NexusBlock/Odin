@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/types"
 )
 
 // permissions

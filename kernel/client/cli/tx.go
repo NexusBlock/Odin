@@ -15,10 +15,10 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/maticnetwork/heimdall/bor/types"
-	hmClient "github.com/maticnetwork/heimdall/client"
-	"github.com/maticnetwork/heimdall/helper"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	hmClient "github.com/nexusblock/heimdall/client"
+	"github.com/nexusblock/heimdall/helper"
+	"github.com/nexusblock/heimdall/kernel/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 var cliLogger = helper.Logger.With("module", "bor/client/cli")

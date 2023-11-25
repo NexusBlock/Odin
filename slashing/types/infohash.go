@@ -6,8 +6,8 @@ import (
 	"sort"
 
 	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/maticnetwork/heimdall/helper"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/helper"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 type ModifiedSlashInfo struct {

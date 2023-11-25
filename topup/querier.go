@@ -10,10 +10,10 @@ import (
 	jsoniter "github.com/json-iterator/go"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	checkpointTypes "github.com/maticnetwork/heimdall/checkpoint/types"
-	"github.com/maticnetwork/heimdall/helper"
-	"github.com/maticnetwork/heimdall/topup/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	checkpointTypes "github.com/nexusblock/heimdall/checkpoint/types"
+	"github.com/nexusblock/heimdall/helper"
+	"github.com/nexusblock/heimdall/topup/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 // NewQuerier returns a new sdk.Keeper instance.

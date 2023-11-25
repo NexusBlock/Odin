@@ -10,9 +10,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	jsoniter "github.com/json-iterator/go"
 
-	checkpointTypes "github.com/maticnetwork/heimdall/checkpoint/types"
-	"github.com/maticnetwork/heimdall/helper"
-	slashingTypes "github.com/maticnetwork/heimdall/slashing/types"
+	checkpointTypes "github.com/nexusblock/heimdall/checkpoint/types"
+	"github.com/nexusblock/heimdall/helper"
+	slashingTypes "github.com/nexusblock/heimdall/slashing/types"
 )
 
 const (

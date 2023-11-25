@@ -5,10 +5,10 @@ import (
 	jsoniter "github.com/json-iterator/go"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/maticnetwork/heimdall/bor/client/rest"
-	"github.com/maticnetwork/heimdall/bor/types"
-	"github.com/maticnetwork/heimdall/helper"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/helper"
+	"github.com/nexusblock/heimdall/kernel/client/rest"
+	"github.com/nexusblock/heimdall/kernel/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 // ResponseWithHeight defines a response object type that wraps an original

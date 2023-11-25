@@ -9,8 +9,8 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmTypes "github.com/tendermint/tendermint/types"
 
-	"github.com/maticnetwork/heimdall/params/subspace"
-	"github.com/maticnetwork/heimdall/sidechannel/types"
+	"github.com/nexusblock/heimdall/params/subspace"
+	"github.com/nexusblock/heimdall/sidechannel/types"
 	"github.com/tendermint/tendermint/libs/log"
 )
 

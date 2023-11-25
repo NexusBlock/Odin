@@ -16,11 +16,11 @@ import (
 	"github.com/tendermint/tendermint/libs/log"
 	httpClient "github.com/tendermint/tendermint/rpc/client"
 
-	"github.com/maticnetwork/heimdall/bridge/setu/broadcaster"
-	"github.com/maticnetwork/heimdall/bridge/setu/queue"
-	"github.com/maticnetwork/heimdall/bridge/setu/util"
-	clerkTypes "github.com/maticnetwork/heimdall/clerk/types"
-	"github.com/maticnetwork/heimdall/helper"
+	"github.com/nexusblock/heimdall/bridge/setu/broadcaster"
+	"github.com/nexusblock/heimdall/bridge/setu/queue"
+	"github.com/nexusblock/heimdall/bridge/setu/util"
+	clerkTypes "github.com/nexusblock/heimdall/clerk/types"
+	"github.com/nexusblock/heimdall/helper"
 )
 
 // Processor defines a block header listerner for Rootchain, Maticchain, Heimdall

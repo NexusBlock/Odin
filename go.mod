@@ -1,4 +1,4 @@
-module github.com/maticnetwork/heimdall
+module github.com/nexusblock/heimdall
 
 go 1.21
 
@@ -14,7 +14,7 @@ require (
 	github.com/gorilla/mux v1.8.0
 	github.com/hashicorp/golang-lru v0.5.5-0.20210104140557-80c98217689d
 	github.com/json-iterator/go v1.1.12
-	github.com/maticnetwork/polyproto v0.0.3-0.20230216113155-340ea926ca53
+	github.com/nexusblock/polyproto v0.0.3
 	github.com/pborman/uuid v1.2.1
 	github.com/pkg/errors v0.9.1
 	github.com/prometheus/client_golang v1.14.0
@@ -151,13 +151,13 @@ require (
 	gopkg.in/yaml.v3 v3.0.1
 )
 
-replace github.com/tendermint/tendermint => github.com/maticnetwork/tendermint v0.26.0-dev0.0.20231005133805-2bb6a831bb2e
+replace github.com/tendermint/tendermint => github.com/nexusblock/tendermint v0.26.0-dev0.0.20231005133805-2bb6a831bb2e
 
 replace github.com/tendermint/tm-db => github.com/tendermint/tm-db v0.2.0
 
-replace github.com/cosmos/cosmos-sdk => github.com/maticnetwork/cosmos-sdk v0.37.5-0.20231005133937-b1eb1f90feb7
+replace github.com/cosmos/cosmos-sdk => github.com/nexusblock/cosmos-sdk v0.37.5-0.20231005133937-b1eb1f90feb7
 
-replace github.com/ethereum/go-ethereum => github.com/maticnetwork/bor v1.0.4
+replace github.com/ethereum/go-ethereum => github.com/nexusblock/kernel v1.0.4
 
 replace go.mongodb.org/mongo-driver => go.mongodb.org/mongo-driver v1.5.1
 

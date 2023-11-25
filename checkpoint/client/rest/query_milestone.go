@@ -9,9 +9,9 @@ import (
 	"github.com/gorilla/mux"
 	jsoniter "github.com/json-iterator/go"
 
-	"github.com/maticnetwork/heimdall/checkpoint/types"
-	"github.com/maticnetwork/heimdall/helper"
-	hmRest "github.com/maticnetwork/heimdall/types/rest"
+	"github.com/nexusblock/heimdall/checkpoint/types"
+	"github.com/nexusblock/heimdall/helper"
+	hmRest "github.com/nexusblock/heimdall/types/rest"
 )
 
 func registerQueryMilestoneRoutes(cliCtx context.CLIContext, r *mux.Router) {

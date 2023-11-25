@@ -11,12 +11,12 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	"github.com/maticnetwork/heimdall/bridge/setu/util"
-	clerkTypes "github.com/maticnetwork/heimdall/clerk/types"
-	hmClient "github.com/maticnetwork/heimdall/client"
-	"github.com/maticnetwork/heimdall/helper"
-	"github.com/maticnetwork/heimdall/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/bridge/setu/util"
+	clerkTypes "github.com/nexusblock/heimdall/clerk/types"
+	hmClient "github.com/nexusblock/heimdall/client"
+	"github.com/nexusblock/heimdall/helper"
+	"github.com/nexusblock/heimdall/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 // GetTxCmd returns the transaction commands for this module

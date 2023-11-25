@@ -11,9 +11,9 @@ import (
 	"github.com/tendermint/tendermint/libs/log"
 	db "github.com/tendermint/tm-db"
 
-	authTypes "github.com/maticnetwork/heimdall/auth/types"
-	"github.com/maticnetwork/heimdall/simulation"
-	simTypes "github.com/maticnetwork/heimdall/types/simulation"
+	authTypes "github.com/nexusblock/heimdall/auth/types"
+	"github.com/nexusblock/heimdall/simulation"
+	simTypes "github.com/nexusblock/heimdall/types/simulation"
 )
 
 func TestHeimdallAppExport(t *testing.T) {

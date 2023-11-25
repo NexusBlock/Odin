@@ -1,6 +1,6 @@
 {
   "genesis_time": "2020-06-04T10:47:20.806665Z",
-  "chain_id": "heimdall-80001",
+  "chain_id": "odin-99001",
   "consensus_params": {
     "block": {
       "max_bytes": "22020096",

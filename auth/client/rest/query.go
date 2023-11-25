@@ -1,4 +1,4 @@
-//nolint
+// nolint
 package rest
 
 import (
@@ -10,12 +10,13 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/rest"
 	"github.com/gorilla/mux"
 
-	authTypes "github.com/maticnetwork/heimdall/auth/types"
-	"github.com/maticnetwork/heimdall/types"
-	hmRest "github.com/maticnetwork/heimdall/types/rest"
+	authTypes "github.com/nexusblock/heimdall/auth/types"
+	"github.com/nexusblock/heimdall/types"
+	hmRest "github.com/nexusblock/heimdall/types/rest"
 )
 
-//It represents the auth params
+// It represents the auth params
+//
 //swagger:response authParamsResponse
 type authParamsResponse struct {
 	//in:body
@@ -100,7 +101,9 @@ type address struct {
 // swagger:route GET /auth/accounts/{address} auth authAccount
 // It returns the account details.
 // responses:
-//   200: authAccountResponse
+//
+//	200: authAccountResponse
+//
 // QueryAccountRequestHandlerFn query account REST Handler
 func QueryAccountRequestHandlerFn(cliCtx context.CLIContext) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
@@ -145,7 +148,9 @@ func QueryAccountRequestHandlerFn(cliCtx context.CLIContext) http.HandlerFunc {
 // swagger:route GET /auth/accounts/{address}/sequence auth authAccountSequence
 // It returns the account sequence
 // responses:
-//   200: authAccountSequenceResponse
+//
+//	200: authAccountSequenceResponse
+//
 // QueryAccountSequenceRequestHandlerFn query account sequence REST Handler
 func QueryAccountSequenceRequestHandlerFn(cliCtx context.CLIContext) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
@@ -197,7 +202,9 @@ func QueryAccountSequenceRequestHandlerFn(cliCtx context.CLIContext) http.Handle
 // swagger:route GET /auth/params auth authParams
 // It returns the auth parameters.
 // responses:
-//   200: authParamsResponse
+//
+//	200: authParamsResponse
+//
 // HTTP request handler to query the auth params values
 func paramsHandlerFn(cliCtx context.CLIContext) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {

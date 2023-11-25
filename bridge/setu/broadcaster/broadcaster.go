@@ -13,13 +13,13 @@ import (
 	bor "github.com/ethereum/go-ethereum"
 	"github.com/ethereum/go-ethereum/core/types"
 
-	authTypes "github.com/maticnetwork/heimdall/auth/types"
-	"github.com/maticnetwork/heimdall/bridge/setu/util"
-	"github.com/maticnetwork/heimdall/helper"
+	authTypes "github.com/nexusblock/heimdall/auth/types"
+	"github.com/nexusblock/heimdall/bridge/setu/util"
+	"github.com/nexusblock/heimdall/helper"
 
 	"github.com/tendermint/tendermint/libs/log"
 
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 // TxBroadcaster uses to broadcast transaction to each chain

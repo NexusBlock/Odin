@@ -11,13 +11,13 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/maticnetwork/heimdall/app"
-	"github.com/maticnetwork/heimdall/clerk"
-	"github.com/maticnetwork/heimdall/clerk/types"
-	"github.com/maticnetwork/heimdall/common"
-	"github.com/maticnetwork/heimdall/helper"
-	"github.com/maticnetwork/heimdall/helper/mocks"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/app"
+	"github.com/nexusblock/heimdall/clerk"
+	"github.com/nexusblock/heimdall/clerk/types"
+	"github.com/nexusblock/heimdall/common"
+	"github.com/nexusblock/heimdall/helper"
+	"github.com/nexusblock/heimdall/helper/mocks"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 //

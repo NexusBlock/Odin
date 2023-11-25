@@ -6,12 +6,12 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/maticnetwork/heimdall/bor/types"
-	"github.com/maticnetwork/heimdall/common"
-	hmCommon "github.com/maticnetwork/heimdall/common"
-	"github.com/maticnetwork/heimdall/helper"
+	"github.com/nexusblock/heimdall/common"
+	hmCommon "github.com/nexusblock/heimdall/common"
+	"github.com/nexusblock/heimdall/helper"
+	"github.com/nexusblock/heimdall/kernel/types"
 
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmTypes "github.com/tendermint/tendermint/types"
 )

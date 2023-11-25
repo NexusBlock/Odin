@@ -4,14 +4,14 @@ import (
 	"os"
 	"testing"
 
-	"github.com/maticnetwork/heimdall/app"
-	"github.com/maticnetwork/heimdall/bridge/setu/broadcaster"
-	"github.com/maticnetwork/heimdall/helper"
+	"github.com/nexusblock/heimdall/app"
+	"github.com/nexusblock/heimdall/bridge/setu/broadcaster"
+	"github.com/nexusblock/heimdall/helper"
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/assert"
 
-	clerkTypes "github.com/maticnetwork/heimdall/clerk/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	clerkTypes "github.com/nexusblock/heimdall/clerk/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 func TestBroadcastWhenTxInMempool(t *testing.T) {

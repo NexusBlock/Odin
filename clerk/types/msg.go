@@ -5,8 +5,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/maticnetwork/heimdall/helper"
-	"github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/helper"
+	"github.com/nexusblock/heimdall/types"
 )
 
 // MsgEventRecord - state msg

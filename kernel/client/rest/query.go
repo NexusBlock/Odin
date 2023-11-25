@@ -25,12 +25,12 @@ import (
 	"github.com/gorilla/mux"
 	jsoniter "github.com/json-iterator/go"
 
-	"github.com/maticnetwork/heimdall/bor/types"
-	checkpointTypes "github.com/maticnetwork/heimdall/checkpoint/types"
-	"github.com/maticnetwork/heimdall/helper"
-	stakingTypes "github.com/maticnetwork/heimdall/staking/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
-	hmRest "github.com/maticnetwork/heimdall/types/rest"
+	checkpointTypes "github.com/nexusblock/heimdall/checkpoint/types"
+	"github.com/nexusblock/heimdall/helper"
+	"github.com/nexusblock/heimdall/kernel/types"
+	stakingTypes "github.com/nexusblock/heimdall/staking/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
+	hmRest "github.com/nexusblock/heimdall/types/rest"
 )
 
 type HeimdallSpanResultWithHeight struct {
@@ -131,15 +131,15 @@ type spanSeed struct {
 var spanOverrides map[uint64]*HeimdallSpanResultWithHeight = nil
 
 func registerQueryRoutes(cliCtx context.CLIContext, r *mux.Router) {
-	r.HandleFunc("/bor/span/list", spanListHandlerFn(cliCtx)).Methods("GET")
-	r.HandleFunc("/bor/span/{id}", spanHandlerFn(cliCtx)).Methods("GET")
-	r.HandleFunc("/bor/latest-span", latestSpanHandlerFn(cliCtx)).Methods("GET")
-	r.HandleFunc("/bor/prepare-next-span", prepareNextSpanHandlerFn(cliCtx)).Methods("GET")
-	r.HandleFunc("/bor/next-span-seed", fetchNextSpanSeedHandlerFn(cliCtx)).Methods("GET")
-	r.HandleFunc("/bor/params", paramsHandlerFn(cliCtx)).Methods("GET")
+	r.HandleFunc("/kernel/span/list", spanListHandlerFn(cliCtx)).Methods("GET")
+	r.HandleFunc("/kernel/span/{id}", spanHandlerFn(cliCtx)).Methods("GET")
+	r.HandleFunc("/kernel/latest-span", latestSpanHandlerFn(cliCtx)).Methods("GET")
+	r.HandleFunc("/kernel/prepare-next-span", prepareNextSpanHandlerFn(cliCtx)).Methods("GET")
+	r.HandleFunc("/kernel/next-span-seed", fetchNextSpanSeedHandlerFn(cliCtx)).Methods("GET")
+	r.HandleFunc("/kernel/params", paramsHandlerFn(cliCtx)).Methods("GET")
 }
 
-// swagger:route GET /bor/next-span-seed bor borNextSpanSeed
+// swagger:route GET /kernel/next-span-seed bor borNextSpanSeed
 // It returns the seed for the next span
 // responses:
 //   200: borNextSpanSeedRespose
@@ -190,7 +190,7 @@ type borSpanListParam struct {
 	Limit int `json:"limit"`
 }
 
-// swagger:route GET /bor/span/list bor borSpanList
+// swagger:route GET /kernel/span/list bor borSpanList
 // It returns the list of Bor Span
 // responses:
 //
@@ -250,7 +250,7 @@ type borSpanById struct {
 	Id int `json:"id"`
 }
 
-// swagger:route GET /bor/span/{id} bor borSpanById
+// swagger:route GET /kernel/span/{id} bor borSpanById
 // It returns the span based on ID
 // responses:
 //
@@ -311,7 +311,7 @@ func spanHandlerFn(cliCtx context.CLIContext) http.HandlerFunc {
 	}
 }
 
-// swagger:route GET /bor/latest-span bor borSpanLatest
+// swagger:route GET /kernel/latest-span bor borSpanLatest
 // It returns the latest-span
 // responses:
 //
@@ -363,7 +363,7 @@ type borPrepareNextSpanParam struct {
 	ChainId int `json:"chain_id"`
 }
 
-// swagger:route GET /bor/prepare-next-span bor borPrepareNextSpan
+// swagger:route GET /kernel/prepare-next-span bor borPrepareNextSpan
 // It returns the prepared next span
 // responses:
 //
@@ -499,7 +499,7 @@ func prepareNextSpanHandlerFn(cliCtx context.CLIContext) http.HandlerFunc {
 	}
 }
 
-// swagger:route GET /bor/params bor borSpanParams
+// swagger:route GET /kernel/params bor borSpanParams
 // It returns the span parameters
 // responses:
 //

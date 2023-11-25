@@ -11,10 +11,10 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 
-	borTypes "github.com/maticnetwork/heimdall/bor/types"
-	"github.com/maticnetwork/heimdall/bridge/setu/util"
-	"github.com/maticnetwork/heimdall/helper"
-	"github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/bridge/setu/util"
+	"github.com/nexusblock/heimdall/helper"
+	borTypes "github.com/nexusblock/heimdall/kernel/types"
+	"github.com/nexusblock/heimdall/types"
 )
 
 // SpanProcessor - process span related events

@@ -8,8 +8,8 @@ import (
 	"github.com/tendermint/tendermint/crypto"
 	"github.com/tendermint/tendermint/crypto/secp256k1"
 
-	authTypes "github.com/maticnetwork/heimdall/auth/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	authTypes "github.com/nexusblock/heimdall/auth/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 // Account contains a privkey, pubkey, address tuple

@@ -5,8 +5,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	hmCommon "github.com/maticnetwork/heimdall/common"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	hmCommon "github.com/nexusblock/heimdall/common"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 // Governance message types and routes
@@ -31,7 +31,7 @@ func NewMsgSubmitProposal(content Content, initialDeposit sdk.Coins, proposer hm
 	return MsgSubmitProposal{content, initialDeposit, proposer, validator}
 }
 
-//nolint
+// nolint
 func (msg MsgSubmitProposal) Route() string { return RouterKey }
 func (msg MsgSubmitProposal) Type() string  { return TypeMsgSubmitProposal }
 

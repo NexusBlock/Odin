@@ -9,8 +9,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/spf13/cobra"
 
-	hmClient "github.com/maticnetwork/heimdall/client"
-	supplyTypes "github.com/maticnetwork/heimdall/supply/types"
+	hmClient "github.com/nexusblock/heimdall/client"
+	supplyTypes "github.com/nexusblock/heimdall/supply/types"
 )
 
 // GetQueryCmd returns the cli query commands for this module

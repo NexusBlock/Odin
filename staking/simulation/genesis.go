@@ -5,10 +5,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/maticnetwork/heimdall/staking/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
-	"github.com/maticnetwork/heimdall/types/module"
-	"github.com/maticnetwork/heimdall/types/simulation"
+	"github.com/nexusblock/heimdall/staking/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
+	"github.com/nexusblock/heimdall/types/module"
+	"github.com/nexusblock/heimdall/types/simulation"
 )
 
 func RandomizedGenState(simState *module.SimulationState) {

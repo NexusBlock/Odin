@@ -7,10 +7,10 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/maticnetwork/heimdall/staking"
-	stakingSim "github.com/maticnetwork/heimdall/staking/simulation"
+	"github.com/nexusblock/heimdall/staking"
+	stakingSim "github.com/nexusblock/heimdall/staking/simulation"
 
-	"github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/types"
 )
 
 // GenRandCheckpoint return headers

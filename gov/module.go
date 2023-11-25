@@ -11,11 +11,11 @@ import (
 	"github.com/spf13/cobra"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/maticnetwork/heimdall/gov/client"
-	"github.com/maticnetwork/heimdall/gov/client/cli"
-	"github.com/maticnetwork/heimdall/gov/client/rest"
-	"github.com/maticnetwork/heimdall/gov/types"
-	hmModule "github.com/maticnetwork/heimdall/types/module"
+	"github.com/nexusblock/heimdall/gov/client"
+	"github.com/nexusblock/heimdall/gov/client/cli"
+	"github.com/nexusblock/heimdall/gov/client/rest"
+	"github.com/nexusblock/heimdall/gov/types"
+	hmModule "github.com/nexusblock/heimdall/types/module"
 )
 
 var (
@@ -95,7 +95,7 @@ func (AppModuleBasic) GetQueryCmd(cdc *codec.Codec) *cobra.Command {
 	return cli.GetQueryCmd(types.StoreKey, cdc)
 }
 
-//___________________________
+// ___________________________
 // app module
 type AppModule struct {
 	AppModuleBasic

@@ -105,7 +105,7 @@ definitions:
     - start_block
     - bor_chain_id
     type: object
-    x-go-package: _/Users/vaibhavjindal/heimdall/bor/client/rest
+    x-go-package: _/Users/vaibhavjindal/heimdall/kernel/client/rest
   StdTx:
     properties:
       memo:
@@ -259,7 +259,7 @@ definitions:
       result:
         $ref: '#/definitions/span'
     type: object
-    x-go-package: _/Users/vaibhavjindal/heimdall/bor/client/rest
+    x-go-package: _/Users/vaibhavjindal/heimdall/kernel/client/rest
   borSpanList:
     properties:
       height:
@@ -271,7 +271,7 @@ definitions:
         type: array
         x-go-name: Result
     type: object
-    x-go-package: _/Users/vaibhavjindal/heimdall/bor/client/rest
+    x-go-package: _/Users/vaibhavjindal/heimdall/kernel/client/rest
   borSpanParams:
     properties:
       height:
@@ -280,7 +280,7 @@ definitions:
       result:
         $ref: '#/definitions/spanParams'
     type: object
-    x-go-package: _/Users/vaibhavjindal/heimdall/bor/client/rest
+    x-go-package: _/Users/vaibhavjindal/heimdall/kernel/client/rest
   chainManager:
     properties:
       chain_params:
@@ -971,7 +971,7 @@ definitions:
       value:
         $ref: '#/definitions/val'
     type: object
-    x-go-package: _/Users/vaibhavjindal/heimdall/bor/client/rest
+    x-go-package: _/Users/vaibhavjindal/heimdall/kernel/client/rest
   output:
     properties:
       type:
@@ -980,7 +980,7 @@ definitions:
       value:
         $ref: '#/definitions/value'
     type: object
-    x-go-package: _/Users/vaibhavjindal/heimdall/bor/client/rest
+    x-go-package: _/Users/vaibhavjindal/heimdall/kernel/client/rest
   overview:
     properties:
       ack_count:
@@ -1404,7 +1404,7 @@ definitions:
       validator_set:
         $ref: '#/definitions/validatorSet'
     type: object
-    x-go-package: _/Users/vaibhavjindal/heimdall/bor/client/rest
+    x-go-package: _/Users/vaibhavjindal/heimdall/kernel/client/rest
   spanParams:
     properties:
       producer_count:
@@ -1423,7 +1423,7 @@ definitions:
         type: integer
         x-go-name: SprintDuration
     type: object
-    x-go-package: _/Users/vaibhavjindal/heimdall/bor/client/rest
+    x-go-package: _/Users/vaibhavjindal/heimdall/kernel/client/rest
   spanSeed:
     properties:
       height:
@@ -1433,7 +1433,7 @@ definitions:
         type: string
         x-go-name: Result
     type: object
-    x-go-package: _/Users/vaibhavjindal/heimdall/bor/client/rest
+    x-go-package: _/Users/vaibhavjindal/heimdall/kernel/client/rest
   stakingNewValidatorInput:
     properties:
       ID:
@@ -2058,7 +2058,7 @@ definitions:
         type: string
         x-go-name: StartBlock
     type: object
-    x-go-package: _/Users/vaibhavjindal/heimdall/bor/client/rest
+    x-go-package: _/Users/vaibhavjindal/heimdall/kernel/client/rest
   validator:
     properties:
       ID:
@@ -2129,7 +2129,7 @@ definitions:
         type: string
         x-go-name: Signature
     type: object
-    x-go-package: _/Users/vaibhavjindal/heimdall/bor/client/rest
+    x-go-package: _/Users/vaibhavjindal/heimdall/kernel/client/rest
   vote:
     properties:
       option:
@@ -2231,7 +2231,7 @@ paths:
           $ref: '#/responses/bankBalanceByAddressResponse'
       tags:
       - bank
-  /bor/latest-span:
+  /kernel/latest-span:
     get:
       description: It returns the latest-span
       operationId: borSpanLatest
@@ -2243,10 +2243,10 @@ paths:
         x-go-name: Height
       responses:
         "200":
-          $ref: '#/responses/borSpanResponse'
+          $ref: '#/responses/kernelSpanResponse'
       tags:
       - bor
-  /bor/next-span-seed:
+  /kernel/next-span-seed:
     get:
       description: It returns the seed for the next span
       operationId: borNextSpanSeed
@@ -2258,10 +2258,10 @@ paths:
         x-go-name: Height
       responses:
         "200":
-          $ref: '#/responses/borNextSpanSeedRespose'
+          $ref: '#/responses/kernelNextSpanSeedRespose'
       tags:
       - bor
-  /bor/params:
+  /kernel/params:
     get:
       description: It returns the span parameters
       operationId: borSpanParams
@@ -2273,10 +2273,10 @@ paths:
         x-go-name: Height
       responses:
         "200":
-          $ref: '#/responses/borSpanParamsResponse'
+          $ref: '#/responses/kernelSpanParamsResponse'
       tags:
       - bor
-  /bor/prepare-next-span:
+  /kernel/prepare-next-span:
     get:
       description: It returns the prepared next span
       operationId: borPrepareNextSpan
@@ -2309,10 +2309,10 @@ paths:
         x-go-name: Height
       responses:
         "200":
-          $ref: '#/responses/borSpanResponse'
+          $ref: '#/responses/kernelSpanResponse'
       tags:
       - bor
-  /bor/propose-span:
+  /kernel/propose-span:
     post:
       description: It returns the prepared msg for proposing the span
       operationId: borProposeSpan
@@ -2326,10 +2326,10 @@ paths:
         x-go-name: Input
       responses:
         "200":
-          $ref: '#/responses/borProposeSpanResponse'
+          $ref: '#/responses/kernelProposeSpanResponse'
       tags:
       - bor
-  /bor/span/{id}:
+  /kernel/span/{id}:
     get:
       description: It returns the span based on ID
       operationId: borSpanById
@@ -2348,10 +2348,10 @@ paths:
         x-go-name: Height
       responses:
         "200":
-          $ref: '#/responses/borSpanResponse'
+          $ref: '#/responses/kernelSpanResponse'
       tags:
       - bor
-  /bor/span/list:
+  /kernel/span/list:
     get:
       description: It returns the list of Bor Span
       operationId: borSpanList
@@ -2377,7 +2377,7 @@ paths:
         x-go-name: Height
       responses:
         "200":
-          $ref: '#/responses/borSpanListResponse'
+          $ref: '#/responses/kernelSpanListResponse'
       tags:
       - bor
   /chainmanager/params:
@@ -3706,15 +3706,15 @@ responses:
   borSpanListResponse:
     description: It represents the list of spans
     schema:
-      $ref: '#/definitions/borSpanList'
+      $ref: '#/definitions/kernelSpanList'
   borSpanParamsResponse:
     description: It represents the bor span parameters
     schema:
-      $ref: '#/definitions/borSpanParams'
+      $ref: '#/definitions/kernelSpanParams'
   borSpanResponse:
     description: It represents the span
     schema:
-      $ref: '#/definitions/borSpan'
+      $ref: '#/definitions/kernelSpan'
   chainManagerParamsResponse:
     description: It represents the bank balance of particluar account
     schema:

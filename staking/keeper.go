@@ -9,11 +9,11 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/tendermint/tendermint/libs/log"
 
-	"github.com/maticnetwork/heimdall/chainmanager"
-	"github.com/maticnetwork/heimdall/helper"
-	"github.com/maticnetwork/heimdall/params/subspace"
-	"github.com/maticnetwork/heimdall/staking/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/chainmanager"
+	"github.com/nexusblock/heimdall/helper"
+	"github.com/nexusblock/heimdall/params/subspace"
+	"github.com/nexusblock/heimdall/staking/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 var (

@@ -5,10 +5,10 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/maticnetwork/heimdall/app"
-	checkpointTypes "github.com/maticnetwork/heimdall/checkpoint/types"
-	"github.com/maticnetwork/heimdall/helper"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/app"
+	checkpointTypes "github.com/nexusblock/heimdall/checkpoint/types"
+	"github.com/nexusblock/heimdall/helper"
+	hmTypes "github.com/nexusblock/heimdall/types"
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/assert"
 )

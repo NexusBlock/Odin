@@ -23,13 +23,13 @@ import (
 	rpctypes "github.com/tendermint/tendermint/rpc/lib/types"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/maticnetwork/heimdall/app"
-	tx "github.com/maticnetwork/heimdall/client/tx"
-	"github.com/maticnetwork/heimdall/helper"
+	"github.com/nexusblock/heimdall/app"
+	tx "github.com/nexusblock/heimdall/client/tx"
+	"github.com/nexusblock/heimdall/helper"
 
 	// unnamed import of statik for swagger UI support
-	"github.com/maticnetwork/heimdall/server/gRPC"
-	_ "github.com/maticnetwork/heimdall/server/statik"
+	"github.com/nexusblock/heimdall/server/gRPC"
+	_ "github.com/nexusblock/heimdall/server/statik"
 )
 
 const shutdownTimeout = 10 * time.Second
@@ -109,7 +109,7 @@ func StartRestServer(mainCtx ctx.Context, cdc *codec.Codec, registerRoutesFn fun
 	return nil
 }
 
-// this is borrowed from maticnetwork rpcserver
+// this is borrowed from nexusblock rpcserver
 type maxBytesHandler struct {
 	h http.Handler
 	n int64

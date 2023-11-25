@@ -12,14 +12,14 @@ import (
 	"github.com/spf13/cobra"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/maticnetwork/heimdall/helper"
-	topupCli "github.com/maticnetwork/heimdall/topup/client/cli"
-	topupRest "github.com/maticnetwork/heimdall/topup/client/rest"
-	"github.com/maticnetwork/heimdall/topup/simulation"
-	"github.com/maticnetwork/heimdall/topup/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
-	hmModule "github.com/maticnetwork/heimdall/types/module"
-	simTypes "github.com/maticnetwork/heimdall/types/simulation"
+	"github.com/nexusblock/heimdall/helper"
+	topupCli "github.com/nexusblock/heimdall/topup/client/cli"
+	topupRest "github.com/nexusblock/heimdall/topup/client/rest"
+	"github.com/nexusblock/heimdall/topup/simulation"
+	"github.com/nexusblock/heimdall/topup/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
+	hmModule "github.com/nexusblock/heimdall/types/module"
+	simTypes "github.com/nexusblock/heimdall/types/simulation"
 )
 
 var (

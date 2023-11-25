@@ -32,13 +32,13 @@ import (
 	"github.com/tendermint/tendermint/privval"
 	tmTypes "github.com/tendermint/tendermint/types"
 
-	"github.com/maticnetwork/heimdall/file"
-	"github.com/maticnetwork/heimdall/version"
+	"github.com/nexusblock/heimdall/file"
+	"github.com/nexusblock/heimdall/version"
 
-	"github.com/maticnetwork/heimdall/app"
-	authCli "github.com/maticnetwork/heimdall/auth/client/cli"
-	hmTxCli "github.com/maticnetwork/heimdall/client/tx"
-	"github.com/maticnetwork/heimdall/helper"
+	"github.com/nexusblock/heimdall/app"
+	authCli "github.com/nexusblock/heimdall/auth/client/cli"
+	hmTxCli "github.com/nexusblock/heimdall/client/tx"
+	"github.com/nexusblock/heimdall/helper"
 )
 
 var logger = helper.Logger.With("module", "cmd/odincli")

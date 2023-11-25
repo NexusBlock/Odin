@@ -6,10 +6,10 @@ import (
 	"github.com/tendermint/tendermint/libs/common"
 	httpClient "github.com/tendermint/tendermint/rpc/client"
 
-	"github.com/maticnetwork/heimdall/bridge/setu/broadcaster"
-	"github.com/maticnetwork/heimdall/bridge/setu/queue"
-	"github.com/maticnetwork/heimdall/bridge/setu/util"
-	"github.com/maticnetwork/heimdall/helper"
+	"github.com/nexusblock/heimdall/bridge/setu/broadcaster"
+	"github.com/nexusblock/heimdall/bridge/setu/queue"
+	"github.com/nexusblock/heimdall/bridge/setu/util"
+	"github.com/nexusblock/heimdall/helper"
 )
 
 const (

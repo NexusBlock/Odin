@@ -4,8 +4,8 @@ import (
 	"fmt"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	govtypes "github.com/maticnetwork/heimdall/gov/types"
-	"github.com/maticnetwork/heimdall/params/types"
+	govtypes "github.com/nexusblock/heimdall/gov/types"
+	"github.com/nexusblock/heimdall/params/types"
 )
 
 // NewParamChangeProposalHandler new param changes proposal handler

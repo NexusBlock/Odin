@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"math/rand"
 
-	"github.com/maticnetwork/heimdall/auth/types"
-	"github.com/maticnetwork/heimdall/simulation"
-	simtypes "github.com/maticnetwork/heimdall/types/simulation"
+	"github.com/nexusblock/heimdall/auth/types"
+	"github.com/nexusblock/heimdall/simulation"
+	simtypes "github.com/nexusblock/heimdall/types/simulation"
 )
 
 const (

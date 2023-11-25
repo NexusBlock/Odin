@@ -5,9 +5,9 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/ethereum/go-ethereum/accounts/abi"
-	hmCommon "github.com/maticnetwork/heimdall/common"
-	"github.com/maticnetwork/heimdall/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	hmCommon "github.com/nexusblock/heimdall/common"
+	"github.com/nexusblock/heimdall/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 // verify interface at compile time
@@ -32,7 +32,7 @@ func NewMsgUnjail(from types.HeimdallAddress, id uint64, txHash types.HeimdallHa
 	}
 }
 
-//nolint
+// nolint
 func (msg MsgUnjail) Route() string { return RouterKey }
 func (msg MsgUnjail) Type() string  { return "unjail" }
 func (msg MsgUnjail) GetSigners() []sdk.AccAddress {

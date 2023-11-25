@@ -6,7 +6,7 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/maticnetwork/heimdall/params/subspace"
+	"github.com/nexusblock/heimdall/params/subspace"
 )
 
 // Default parameter values

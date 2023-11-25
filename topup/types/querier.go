@@ -1,6 +1,6 @@
 package types
 
-import "github.com/maticnetwork/heimdall/types"
+import "github.com/nexusblock/heimdall/types"
 
 const (
 	QuerySequence            = "sequence"

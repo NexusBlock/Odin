@@ -4,9 +4,9 @@ import (
 	"testing"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/maticnetwork/heimdall/app"
-	"github.com/maticnetwork/heimdall/chainmanager"
-	"github.com/maticnetwork/heimdall/chainmanager/types"
+	"github.com/nexusblock/heimdall/app"
+	"github.com/nexusblock/heimdall/chainmanager"
+	"github.com/nexusblock/heimdall/chainmanager/types"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 )

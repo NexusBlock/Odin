@@ -1,4 +1,4 @@
-//nolint
+// nolint
 package rest
 
 import (
@@ -10,11 +10,12 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/rest"
 	"github.com/gorilla/mux"
 
-	bankTypes "github.com/maticnetwork/heimdall/bank/types"
-	"github.com/maticnetwork/heimdall/types"
+	bankTypes "github.com/nexusblock/heimdall/bank/types"
+	"github.com/nexusblock/heimdall/types"
 )
 
-//It represents the bank balance of particluar account
+// It represents the bank balance of particluar account
+//
 //swagger:response bankBalanceByAddressResponse
 type bankBalanceByAddressResponse struct {
 	//in:body
@@ -50,7 +51,9 @@ type Address struct {
 // swagger:route GET /bank/balances/{address} bank bankBalanceByAddress
 // It returns the matic balance of particular address
 // responses:
-//   200: bankBalanceByAddressResponse
+//
+//	200: bankBalanceByAddressResponse
+//
 // QueryBalancesRequestHandlerFn query accountREST Handler
 func QueryBalancesRequestHandlerFn(cliCtx context.CLIContext) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {

@@ -5,9 +5,9 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	hmCommon "github.com/maticnetwork/heimdall/common"
-	"github.com/maticnetwork/heimdall/gov/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	hmCommon "github.com/nexusblock/heimdall/common"
+	"github.com/nexusblock/heimdall/gov/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 // NewHandler handle all "gov" type messages.

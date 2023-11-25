@@ -14,12 +14,12 @@ import (
 	"github.com/spf13/viper"
 
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/maticnetwork/heimdall/bridge/setu/util"
-	hmClient "github.com/maticnetwork/heimdall/client"
-	"github.com/maticnetwork/heimdall/contracts/stakinginfo"
-	"github.com/maticnetwork/heimdall/helper"
-	"github.com/maticnetwork/heimdall/staking/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/bridge/setu/util"
+	hmClient "github.com/nexusblock/heimdall/client"
+	"github.com/nexusblock/heimdall/contracts/stakinginfo"
+	"github.com/nexusblock/heimdall/helper"
+	"github.com/nexusblock/heimdall/staking/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 var logger = helper.Logger.With("module", "staking/client/cli")

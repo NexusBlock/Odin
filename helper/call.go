@@ -16,15 +16,15 @@ import (
 	"github.com/ethereum/go-ethereum/rpc"
 	lru "github.com/hashicorp/golang-lru"
 
-	"github.com/maticnetwork/heimdall/contracts/erc20"
-	"github.com/maticnetwork/heimdall/contracts/rootchain"
-	"github.com/maticnetwork/heimdall/contracts/slashmanager"
-	"github.com/maticnetwork/heimdall/contracts/stakemanager"
-	"github.com/maticnetwork/heimdall/contracts/stakinginfo"
-	"github.com/maticnetwork/heimdall/contracts/statereceiver"
-	"github.com/maticnetwork/heimdall/contracts/statesender"
-	"github.com/maticnetwork/heimdall/contracts/validatorset"
-	"github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/contracts/erc20"
+	"github.com/nexusblock/heimdall/contracts/rootchain"
+	"github.com/nexusblock/heimdall/contracts/slashmanager"
+	"github.com/nexusblock/heimdall/contracts/stakemanager"
+	"github.com/nexusblock/heimdall/contracts/stakinginfo"
+	"github.com/nexusblock/heimdall/contracts/statereceiver"
+	"github.com/nexusblock/heimdall/contracts/statesender"
+	"github.com/nexusblock/heimdall/contracts/validatorset"
+	"github.com/nexusblock/heimdall/types"
 )
 
 // smart contracts' events names

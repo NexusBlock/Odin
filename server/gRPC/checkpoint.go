@@ -7,11 +7,11 @@ import (
 	"time"
 
 	cliContext "github.com/cosmos/cosmos-sdk/client/context"
-	"github.com/maticnetwork/heimdall/helper"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/helper"
+	hmTypes "github.com/nexusblock/heimdall/types"
 
-	proto "github.com/maticnetwork/polyproto/heimdall"
-	protoutils "github.com/maticnetwork/polyproto/utils"
+	proto "github.com/nexusblock/polyproto/heimdall"
+	protoutils "github.com/nexusblock/polyproto/utils"
 	"google.golang.org/protobuf/types/known/emptypb"
 	"google.golang.org/protobuf/types/known/timestamppb"
 )

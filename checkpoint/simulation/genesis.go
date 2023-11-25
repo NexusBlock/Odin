@@ -3,9 +3,9 @@ package simulation
 import (
 	"time"
 
-	"github.com/maticnetwork/heimdall/checkpoint/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
-	"github.com/maticnetwork/heimdall/types/module"
+	"github.com/nexusblock/heimdall/checkpoint/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
+	"github.com/nexusblock/heimdall/types/module"
 )
 
 // RandomizedGenState return dummy genesis

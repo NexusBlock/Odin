@@ -1,7 +1,7 @@
 package types
 
 import (
-	"github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/types"
 )
 
 // query endpoints supported by the staking Querier

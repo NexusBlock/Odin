@@ -11,12 +11,12 @@ import (
 	"github.com/spf13/cobra"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	clerkCli "github.com/maticnetwork/heimdall/clerk/client/cli"
-	clerkRest "github.com/maticnetwork/heimdall/clerk/client/rest"
-	"github.com/maticnetwork/heimdall/clerk/types"
-	"github.com/maticnetwork/heimdall/helper"
-	hmTypes "github.com/maticnetwork/heimdall/types"
-	hmModule "github.com/maticnetwork/heimdall/types/module"
+	clerkCli "github.com/nexusblock/heimdall/clerk/client/cli"
+	clerkRest "github.com/nexusblock/heimdall/clerk/client/rest"
+	"github.com/nexusblock/heimdall/clerk/types"
+	"github.com/nexusblock/heimdall/helper"
+	hmTypes "github.com/nexusblock/heimdall/types"
+	hmModule "github.com/nexusblock/heimdall/types/module"
 )
 
 var (

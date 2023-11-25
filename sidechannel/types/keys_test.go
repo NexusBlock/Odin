@@ -4,7 +4,7 @@ import (
 	"encoding/binary"
 	"testing"
 
-	"github.com/maticnetwork/heimdall/sidechannel/types"
+	"github.com/nexusblock/heimdall/sidechannel/types"
 	"github.com/stretchr/testify/require"
 )
 

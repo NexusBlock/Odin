@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/maticnetwork/heimdall/checkpoint/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/checkpoint/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 	abci "github.com/tendermint/tendermint/abci/types"

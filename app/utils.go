@@ -10,8 +10,8 @@ import (
 	"github.com/tendermint/tendermint/libs/log"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/maticnetwork/heimdall/types/module"
-	simTypes "github.com/maticnetwork/heimdall/types/simulation"
+	"github.com/nexusblock/heimdall/types/module"
+	simTypes "github.com/nexusblock/heimdall/types/simulation"
 )
 
 // SimAppChainID hardcoded chainID for simulation

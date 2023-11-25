@@ -8,10 +8,10 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/tendermint/tendermint/crypto"
 
-	authExported "github.com/maticnetwork/heimdall/auth/exported"
-	authTypes "github.com/maticnetwork/heimdall/auth/types"
-	"github.com/maticnetwork/heimdall/supply/exported"
-	"github.com/maticnetwork/heimdall/types"
+	authExported "github.com/nexusblock/heimdall/auth/exported"
+	authTypes "github.com/nexusblock/heimdall/auth/types"
+	"github.com/nexusblock/heimdall/supply/exported"
+	"github.com/nexusblock/heimdall/types"
 )
 
 //

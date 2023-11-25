@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	types "github.com/maticnetwork/heimdall/types/error"
+	types "github.com/nexusblock/heimdall/types/error"
 	"github.com/stretchr/testify/assert"
 	"github.com/tendermint/tendermint/libs/common"
 )

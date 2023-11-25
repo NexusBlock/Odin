@@ -8,13 +8,13 @@ import (
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/context"
 	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/maticnetwork/heimdall/helper"
+	"github.com/nexusblock/heimdall/helper"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	"github.com/maticnetwork/heimdall/clerk/types"
-	clerkTypes "github.com/maticnetwork/heimdall/clerk/types"
-	hmClient "github.com/maticnetwork/heimdall/client"
+	"github.com/nexusblock/heimdall/clerk/types"
+	clerkTypes "github.com/nexusblock/heimdall/clerk/types"
+	hmClient "github.com/nexusblock/heimdall/client"
 )
 
 var logger = helper.Logger.With("module", "clerk/client/cli")

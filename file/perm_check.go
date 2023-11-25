@@ -4,7 +4,7 @@ import (
 	"errors"
 	"os"
 
-	types "github.com/maticnetwork/heimdall/types/error"
+	types "github.com/nexusblock/heimdall/types/error"
 )
 
 // PermCheck check the secret key and the keystore files.

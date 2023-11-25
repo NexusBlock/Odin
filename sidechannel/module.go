@@ -12,10 +12,10 @@ import (
 	"github.com/spf13/cobra"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/maticnetwork/heimdall/auth/simulation"
-	"github.com/maticnetwork/heimdall/sidechannel/types"
-	hmModule "github.com/maticnetwork/heimdall/types/module"
-	simTypes "github.com/maticnetwork/heimdall/types/simulation"
+	"github.com/nexusblock/heimdall/auth/simulation"
+	"github.com/nexusblock/heimdall/sidechannel/types"
+	hmModule "github.com/nexusblock/heimdall/types/module"
+	simTypes "github.com/nexusblock/heimdall/types/simulation"
 )
 
 var (

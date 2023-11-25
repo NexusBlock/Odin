@@ -8,12 +8,12 @@ import (
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/maticnetwork/heimdall/bank"
-	"github.com/maticnetwork/heimdall/chainmanager"
-	"github.com/maticnetwork/heimdall/params/subspace"
-	"github.com/maticnetwork/heimdall/staking"
-	"github.com/maticnetwork/heimdall/topup/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/bank"
+	"github.com/nexusblock/heimdall/chainmanager"
+	"github.com/nexusblock/heimdall/params/subspace"
+	"github.com/nexusblock/heimdall/staking"
+	"github.com/nexusblock/heimdall/topup/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
 	"github.com/tendermint/tendermint/libs/log"
 )
 

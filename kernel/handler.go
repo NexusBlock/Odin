@@ -5,8 +5,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/maticnetwork/heimdall/bor/types"
-	"github.com/maticnetwork/heimdall/common"
+	"github.com/nexusblock/heimdall/common"
+	"github.com/nexusblock/heimdall/kernel/types"
 )
 
 // NewHandler returns a handler for "bor" type messages.

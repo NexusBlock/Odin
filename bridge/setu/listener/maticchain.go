@@ -6,7 +6,7 @@ import (
 
 	"github.com/RichardKnop/machinery/v1/tasks"
 
-	"github.com/maticnetwork/heimdall/helper"
+	"github.com/nexusblock/heimdall/helper"
 )
 
 // MaticChainListener - Listens to and process headerblocks from maticchain

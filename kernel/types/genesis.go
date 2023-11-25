@@ -3,9 +3,9 @@ package types
 import (
 	"encoding/json"
 
-	chainmanagerTypes "github.com/maticnetwork/heimdall/chainmanager/types"
-	"github.com/maticnetwork/heimdall/gov/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	chainmanagerTypes "github.com/nexusblock/heimdall/chainmanager/types"
+	"github.com/nexusblock/heimdall/gov/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 // GenesisState is the bor state that must be provided at genesis.

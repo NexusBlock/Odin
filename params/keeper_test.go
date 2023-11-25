@@ -8,7 +8,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 
-	subspace "github.com/maticnetwork/heimdall/params/subspace"
+	subspace "github.com/nexusblock/heimdall/params/subspace"
 )
 
 func TestKeeper(t *testing.T) {

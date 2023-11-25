@@ -11,10 +11,10 @@ import (
 	"github.com/spf13/cobra"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/maticnetwork/heimdall/helper"
-	supplyCli "github.com/maticnetwork/heimdall/supply/client/cli"
-	"github.com/maticnetwork/heimdall/supply/types"
-	hmModule "github.com/maticnetwork/heimdall/types/module"
+	"github.com/nexusblock/heimdall/helper"
+	supplyCli "github.com/nexusblock/heimdall/supply/client/cli"
+	"github.com/nexusblock/heimdall/supply/types"
+	hmModule "github.com/nexusblock/heimdall/types/module"
 )
 
 var (

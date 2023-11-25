@@ -6,16 +6,16 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	cmTypes "github.com/maticnetwork/heimdall/chainmanager/types"
-	chSim "github.com/maticnetwork/heimdall/checkpoint/simulation"
-	"github.com/maticnetwork/heimdall/checkpoint/types"
-	errs "github.com/maticnetwork/heimdall/common"
-	"github.com/maticnetwork/heimdall/helper"
+	cmTypes "github.com/nexusblock/heimdall/chainmanager/types"
+	chSim "github.com/nexusblock/heimdall/checkpoint/simulation"
+	"github.com/nexusblock/heimdall/checkpoint/types"
+	errs "github.com/nexusblock/heimdall/common"
+	"github.com/nexusblock/heimdall/helper"
 
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 func TestMilestoneHandlerTestSuite(t *testing.T) {

@@ -9,10 +9,10 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/rest"
 
-	authTypes "github.com/maticnetwork/heimdall/auth/types"
-	"github.com/maticnetwork/heimdall/client/utils"
-	"github.com/maticnetwork/heimdall/helper"
-	hmRest "github.com/maticnetwork/heimdall/types/rest"
+	authTypes "github.com/nexusblock/heimdall/auth/types"
+	"github.com/nexusblock/heimdall/client/utils"
+	"github.com/nexusblock/heimdall/helper"
+	hmRest "github.com/nexusblock/heimdall/types/rest"
 )
 
 //-----------------------------------------------------------------------------

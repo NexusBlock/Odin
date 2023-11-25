@@ -14,16 +14,16 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	chainmanagerTypes "github.com/maticnetwork/heimdall/chainmanager/types"
-	"github.com/maticnetwork/heimdall/helper"
-	slashingCli "github.com/maticnetwork/heimdall/slashing/client/cli"
-	"github.com/maticnetwork/heimdall/slashing/client/rest"
-	"github.com/maticnetwork/heimdall/slashing/simulation"
-	"github.com/maticnetwork/heimdall/slashing/types"
-	"github.com/maticnetwork/heimdall/staking"
-	hmTypes "github.com/maticnetwork/heimdall/types"
-	hmModule "github.com/maticnetwork/heimdall/types/module"
-	simTypes "github.com/maticnetwork/heimdall/types/simulation"
+	chainmanagerTypes "github.com/nexusblock/heimdall/chainmanager/types"
+	"github.com/nexusblock/heimdall/helper"
+	slashingCli "github.com/nexusblock/heimdall/slashing/client/cli"
+	"github.com/nexusblock/heimdall/slashing/client/rest"
+	"github.com/nexusblock/heimdall/slashing/simulation"
+	"github.com/nexusblock/heimdall/slashing/types"
+	"github.com/nexusblock/heimdall/staking"
+	hmTypes "github.com/nexusblock/heimdall/types"
+	hmModule "github.com/nexusblock/heimdall/types/module"
+	simTypes "github.com/nexusblock/heimdall/types/simulation"
 )
 
 var (

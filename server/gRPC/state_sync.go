@@ -7,8 +7,8 @@ import (
 	"time"
 
 	cliContext "github.com/cosmos/cosmos-sdk/client/context"
-	"github.com/maticnetwork/heimdall/helper"
-	proto "github.com/maticnetwork/polyproto/heimdall"
+	"github.com/nexusblock/heimdall/helper"
+	proto "github.com/nexusblock/polyproto/heimdall"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 	"google.golang.org/protobuf/types/known/timestamppb"

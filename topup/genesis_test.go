@@ -7,10 +7,10 @@ import (
 	"time"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/maticnetwork/heimdall/app"
-	"github.com/maticnetwork/heimdall/topup"
-	"github.com/maticnetwork/heimdall/topup/types"
-	"github.com/maticnetwork/heimdall/types/simulation"
+	"github.com/nexusblock/heimdall/app"
+	"github.com/nexusblock/heimdall/topup"
+	"github.com/nexusblock/heimdall/topup/types"
+	"github.com/nexusblock/heimdall/types/simulation"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 )

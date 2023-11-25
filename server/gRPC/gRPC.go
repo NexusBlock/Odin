@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/cosmos/cosmos-sdk/codec"
-	proto "github.com/maticnetwork/polyproto/heimdall"
+	proto "github.com/nexusblock/polyproto/heimdall"
 	tmLog "github.com/tendermint/tendermint/libs/log"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
@@ -14,7 +14,7 @@ import (
 )
 
 const (
-	spanURL                 = "/bor/span/%v"
+	spanURL                 = "/kernel/span/%v"
 	eventRecordList         = "/clerk/event-record/list"
 	fetchCheckpointCount    = "/checkpoints/count"
 	fetchCheckpoint         = "/checkpoints/%s"

@@ -1,7 +1,7 @@
 package types
 
 import (
-	"github.com/maticnetwork/heimdall/params/subspace"
+	"github.com/nexusblock/heimdall/params/subspace"
 )
 
 const (

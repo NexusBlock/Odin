@@ -6,10 +6,10 @@ import (
 	"fmt"
 
 	cliContext "github.com/cosmos/cosmos-sdk/client/context"
-	"github.com/maticnetwork/heimdall/helper"
-	"github.com/maticnetwork/heimdall/types"
-	proto "github.com/maticnetwork/polyproto/heimdall"
-	protoutils "github.com/maticnetwork/polyproto/utils"
+	"github.com/nexusblock/heimdall/helper"
+	"github.com/nexusblock/heimdall/types"
+	proto "github.com/nexusblock/polyproto/heimdall"
+	protoutils "github.com/nexusblock/polyproto/utils"
 )
 
 func (h *HeimdallGRPCServer) Span(ctx context.Context, in *proto.SpanRequest) (*proto.SpanResponse, error) {

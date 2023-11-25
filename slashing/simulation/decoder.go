@@ -7,8 +7,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	gogotypes "github.com/gogo/protobuf/types"
-	"github.com/maticnetwork/heimdall/slashing/types"
-	hmTpyes "github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/slashing/types"
+	hmTpyes "github.com/nexusblock/heimdall/types"
 )
 
 // DecodeStore unmarshals the KVPair's Value to the corresponding slashing type

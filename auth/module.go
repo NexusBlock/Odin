@@ -12,13 +12,13 @@ import (
 	"github.com/spf13/cobra"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	authCli "github.com/maticnetwork/heimdall/auth/client/cli"
-	authRest "github.com/maticnetwork/heimdall/auth/client/rest"
-	"github.com/maticnetwork/heimdall/auth/simulation"
-	"github.com/maticnetwork/heimdall/auth/types"
-	"github.com/maticnetwork/heimdall/helper"
-	hmModule "github.com/maticnetwork/heimdall/types/module"
-	simTypes "github.com/maticnetwork/heimdall/types/simulation"
+	authCli "github.com/nexusblock/heimdall/auth/client/cli"
+	authRest "github.com/nexusblock/heimdall/auth/client/rest"
+	"github.com/nexusblock/heimdall/auth/simulation"
+	"github.com/nexusblock/heimdall/auth/types"
+	"github.com/nexusblock/heimdall/helper"
+	hmModule "github.com/nexusblock/heimdall/types/module"
+	simTypes "github.com/nexusblock/heimdall/types/simulation"
 )
 
 var (

@@ -1,7 +1,7 @@
 package exported
 
 import (
-	"github.com/maticnetwork/heimdall/auth/exported"
+	"github.com/nexusblock/heimdall/auth/exported"
 )
 
 // ModuleAccountI defines an account interface for modules that hold tokens in

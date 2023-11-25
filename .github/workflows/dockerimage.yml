@@ -22,7 +22,7 @@ jobs:
         echo "Docker login"
         docker login -u $DOCKERHUB -p $DOCKERHUB_KEY
         echo "running build"
-        docker build -f Dockerfile.deprecated -t maticnetwork/heimdall:${GITHUB_REF/refs\/tags\//} .
+        docker build -f Dockerfile.deprecated -t nexusblock/heimdall:${GITHUB_REF/refs\/tags\//} .
         echo "pushing image"
-        docker push maticnetwork/heimdall:${GITHUB_REF/refs\/tags\//}
+        docker push nexusblock/heimdall:${GITHUB_REF/refs\/tags\//}
         echo "DONE!"

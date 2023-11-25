@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	cmn "github.com/maticnetwork/heimdall/common"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	cmn "github.com/nexusblock/heimdall/common"
+	hmTypes "github.com/nexusblock/heimdall/types"
 
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"

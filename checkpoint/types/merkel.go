@@ -9,8 +9,8 @@ import (
 
 	"github.com/tendermint/crypto/sha3"
 
-	"github.com/maticnetwork/heimdall/helper"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	"github.com/nexusblock/heimdall/helper"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 // ValidateCheckpoint - Validates if checkpoint rootHash matches or not

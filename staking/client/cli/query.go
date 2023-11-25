@@ -11,9 +11,9 @@ import (
 	"github.com/spf13/viper"
 
 	"github.com/ethereum/go-ethereum/common"
-	hmClient "github.com/maticnetwork/heimdall/client"
-	"github.com/maticnetwork/heimdall/staking/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	hmClient "github.com/nexusblock/heimdall/client"
+	"github.com/nexusblock/heimdall/staking/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 // GetQueryCmd returns the cli query commands for this module

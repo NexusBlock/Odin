@@ -72,7 +72,7 @@ If the node shows up the logs in below pattern
 ```
 panic: Exception (501) Reason: "read tcp 127.0.0.1:35218->127.0.0.1:5672: read: connection reset by peer"
 goroutine 1 [running]:
-github.com/maticnetwork/heimdall/bridge/setu/queue. NewQueueConnector({0xc0002ccf60,0x22})
+github.com/nexusblock/heimdall/bridge/setu/queue. NewQueueConnector({0xc0002ccf60,0x22})
 ```
 Your Heimdall Bridge has issues please follow the steps below to fix this
 

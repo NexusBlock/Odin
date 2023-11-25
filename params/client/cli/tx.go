@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/maticnetwork/heimdall/helper"
+	"github.com/nexusblock/heimdall/helper"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
@@ -13,10 +13,10 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/version"
 
-	govTypes "github.com/maticnetwork/heimdall/gov/types"
-	paramscutils "github.com/maticnetwork/heimdall/params/client/utils"
-	"github.com/maticnetwork/heimdall/params/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
+	govTypes "github.com/nexusblock/heimdall/gov/types"
+	paramscutils "github.com/nexusblock/heimdall/params/client/utils"
+	"github.com/nexusblock/heimdall/params/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
 )
 
 var logger = helper.Logger.With("module", "params/client/cli")

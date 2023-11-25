@@ -10,9 +10,9 @@ import (
 	jsoniter "github.com/json-iterator/go"
 	"github.com/spf13/cobra"
 
-	"github.com/maticnetwork/heimdall/auth/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
-	"github.com/maticnetwork/heimdall/version"
+	"github.com/nexusblock/heimdall/auth/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
+	"github.com/nexusblock/heimdall/version"
 )
 
 // GetQueryCmd returns the transaction commands for this module

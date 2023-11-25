@@ -1,4 +1,4 @@
-//nolint
+// nolint
 package rest
 
 import (
@@ -8,14 +8,15 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/gorilla/mux"
 
-	"github.com/maticnetwork/heimdall/slashing/types"
-	hmTypes "github.com/maticnetwork/heimdall/types"
-	"github.com/maticnetwork/heimdall/types/rest"
+	"github.com/nexusblock/heimdall/slashing/types"
+	hmTypes "github.com/nexusblock/heimdall/types"
+	"github.com/nexusblock/heimdall/types/rest"
 
-	restClient "github.com/maticnetwork/heimdall/client/rest"
+	restClient "github.com/nexusblock/heimdall/client/rest"
 )
 
-//It represents unjail msg.
+// It represents unjail msg.
+//
 //swagger:response slashingUnjailResponse
 type slashingUnjailResponse struct {
 	//in:body
@@ -46,7 +47,8 @@ type slashingUnjailVal struct {
 	BlockNumber uint64 `json:"block_number"`
 }
 
-//It represents Propose Span msg.
+// It represents Propose Span msg.
+//
 //swagger:response slashingNewTickResponse
 type slashingNewTickResponse struct {
 	//in:body
@@ -75,7 +77,8 @@ type slashingNewTickVal struct {
 	SlashingInfoBytes string `json:"slashinginfobytes"`
 }
 
-//It represents Propose Span msg.
+// It represents Propose Span msg.
+//
 //swagger:response slashingTickAckResponse
 type slashingTickAckResponse struct {
 	//in:body
@@ -188,7 +191,8 @@ type BaseReq struct {
 // swagger:route POST /slashing/validators/{validatorAddr}/unjail slashing slashingUnjail
 // It returns the prepared msg for unjail
 // responses:
-//   200: slashingUnjailResponse
+//
+//	200: slashingUnjailResponse
 func newUnjailRequestHandlerFn(cliCtx context.CLIContext) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		// read req from Request
@@ -239,7 +243,8 @@ type slashingNewTickInput struct {
 // swagger:route POST /slashing/tick slashing slashingNewTick
 // It returns the prepared msg for new tick
 // responses:
-//   200: slashingNewTickResponse
+//
+//	200: slashingNewTickResponse
 func newTickRequestHandlerFn(cliCtx context.CLIContext) http.HandlerFunc {
 
 	return func(w http.ResponseWriter, r *http.Request) {
@@ -286,7 +291,8 @@ type slashingTickAckInput struct {
 // swagger:route POST slashing/tick-ack slashing slashingTickAck
 // It returns the prepared msg for tick-ack
 // responses:
-//   200: stakingTickAckResponse
+//
+//	200: stakingTickAckResponse
 func newTickAckHandler(cliCtx context.CLIContext) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 
