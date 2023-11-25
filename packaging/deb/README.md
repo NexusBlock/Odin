@@ -6,11 +6,11 @@ For debian packages you will need to add the following layouts during the build
 
 
 
-heimdalld/
+odind/
    DEBIAN/control
    DEBIAN/postinst
-   usr/local/bin/heimdalld
-   lib/systemd/system/heimdalld.service
+   usr/local/bin/odind
+   lib/systemd/system/odind.service
 
 This will be wrapped during the build package process building
 

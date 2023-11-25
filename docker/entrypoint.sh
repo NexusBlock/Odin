@@ -5,4 +5,4 @@ if [ "$1" = 'heimdallcli' ]; then
     exec heimdallcli --home=$HEIMDALL_DIR "$@"
 fi
 
-exec heimdalld --home=$HEIMDALL_DIR "$@"
+exec odind --home=$HEIMDALL_DIR "$@"

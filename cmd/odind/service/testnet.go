@@ -228,7 +228,7 @@ testnet --v 4 --n 8 --output-dir ./output --starting-ip-address 192.168.10.2
 		"Prefix the directory name for each node with (node results in node0, node1, ...)",
 	)
 
-	cmd.Flags().String(flagNodeDaemonHome, "heimdalld",
+	cmd.Flags().String(flagNodeDaemonHome, "odind",
 		"Home directory of the node's daemon configuration",
 	)
 

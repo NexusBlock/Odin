@@ -31,7 +31,7 @@ func TestCheckpointSigs(t *testing.T) {
 
 	viper.Set(TendermintNodeFlag, testTendermintNode)
 	viper.Set("log_level", "info")
-	InitHeimdallConfig(os.ExpandEnv("$HOME/.heimdalld"))
+	InitHeimdallConfig(os.ExpandEnv("$HOME/.odind"))
 
 	contractCallerObj, err := NewContractCaller()
 	if err != nil {
@@ -84,7 +84,7 @@ func TestPopulateABIs(t *testing.T) {
 
 	viper.Set(TendermintNodeFlag, testTendermintNode)
 	viper.Set("log_level", "info")
-	InitHeimdallConfig(os.ExpandEnv("$HOME/.heimdalld"))
+	InitHeimdallConfig(os.ExpandEnv("$HOME/.odind"))
 
 	t.Log("ABIs map should be empty and all ABIs not found")
 	assert.True(t, len(ContractsABIsMap) == 0)

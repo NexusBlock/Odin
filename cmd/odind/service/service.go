@@ -63,7 +63,7 @@ import (
 	"github.com/maticnetwork/heimdall/version"
 )
 
-var logger = helper.Logger.With("module", "cmd/heimdalld")
+var logger = helper.Logger.With("module", "cmd/odind")
 
 var (
 	flagNodeDirPrefix    = "node-dir-prefix"
@@ -154,7 +154,7 @@ func NewHeimdallService(pCtx context.Context, args []string) {
 	defer stop()
 
 	rootCmd := &cobra.Command{
-		Use:               "heimdalld",
+		Use:               "odind",
 		Short:             "Heimdall Daemon (server)",
 		PersistentPreRunE: server.PersistentPreRunEFn(ctx),
 	}

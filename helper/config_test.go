@@ -24,7 +24,7 @@ func TestHeimdallConfig(t *testing.T) {
 	// cliCtx.BroadcastMode = client.BroadcastSync
 	// cliCtx.TrustNode = true
 
-	InitHeimdallConfig(os.ExpandEnv("$HOME/.heimdalld"))
+	InitHeimdallConfig(os.ExpandEnv("$HOME/.odind"))
 
 	fmt.Println("Address", GetAddress())
 
@@ -42,7 +42,7 @@ func TestHeimdallConfigNewSelectionAlgoHeight(t *testing.T) {
 
 		viper.Set("chain", chain)
 
-		InitHeimdallConfig(os.ExpandEnv("$HOME/.heimdalld"))
+		InitHeimdallConfig(os.ExpandEnv("$HOME/.odind"))
 
 		nsah := GetNewSelectionAlgoHeight()
 		if nsah == 0 && !shouldBeZero || nsah != 0 && shouldBeZero {
@@ -61,7 +61,7 @@ func TestGetChainManagerAddressMigration(t *testing.T) {
 	}
 
 	viper.Set("chain", "loki")
-	InitHeimdallConfig(os.ExpandEnv("$HOME/.heimdalld"))
+	InitHeimdallConfig(os.ExpandEnv("$HOME/.odind"))
 
 	migration, found := GetChainManagerAddressMigration(350)
 
@@ -83,7 +83,7 @@ func TestGetChainManagerAddressMigration(t *testing.T) {
 	conf.BorRPCUrl = ""
 
 	viper.Set("chain", "newChain")
-	InitHeimdallConfig(os.ExpandEnv("$HOME/.heimdalld"))
+	InitHeimdallConfig(os.ExpandEnv("$HOME/.odind"))
 
 	_, found = GetChainManagerAddressMigration(350)
 	if found {

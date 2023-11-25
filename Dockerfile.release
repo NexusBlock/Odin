@@ -9,7 +9,7 @@ RUN apk add --no-cache \
        mkdir -p ${HEIMDALL_DIR}
 
 WORKDIR ${HEIMDALL_DIR}
-COPY heimdalld /usr/bin/
+COPY odind /usr/bin/
 COPY heimdallcli /usr/bin/
 COPY builder/files/genesis-mainnet-v1.json ${HEIMDALL_DIR}/
 COPY builder/files/genesis-testnet-v4.json ${HEIMDALL_DIR}/

@@ -1,6 +1,6 @@
 # Simple usage with a mounted data directory:
 # > docker build -t maticnetwork/heimdall:<tag> .
-# > docker run -it -p 26657:26657 -p 26656:26656 -v ~/.heimdalld:/root/.heimdalld maticnetwork/heimdall:<tag> heimdalld init
+# > docker run -it -p 26657:26657 -p 26656:26656 -v ~/.odind:/root/.odind maticnetwork/heimdall:<tag> odind init
 
 # Start from a Debian image with the latest version of Go installed
 # and a workspace (GOPATH) configured at /go.
@@ -25,7 +25,7 @@ ENV GOBIN $GOPATH/bin
 RUN make install
 
 # add volumes
-VOLUME [ "/root/.heimdalld", "./logs" ]
+VOLUME [ "/root/.odind", "./logs" ]
 
 # expose ports
 EXPOSE 1317 26656 26657

@@ -22,7 +22,7 @@ func TestBroadcastWhenTxInMempool(t *testing.T) {
 	viper.Set(helper.TendermintNodeFlag, "http://localhost:26657")
 	viper.Set("log_level", "info")
 
-	helper.InitHeimdallConfig(os.ExpandEnv("$HOME/.heimdalld"))
+	helper.InitHeimdallConfig(os.ExpandEnv("$HOME/.odind"))
 
 	_txBroadcaster := broadcaster.NewTxBroadcaster(cdc)
 

@@ -44,13 +44,13 @@ To start bridge as a validator you just have to add `--bridge` command to your h
 To run all the service :
 
 ```bash
-./heimdalld start --bridge --all
+./odind start --bridge --all
 ```
 
 To use specific services :
 
 ```bash
-./heimdalld start --bridge --only=clerk,staking
+./odind start --bridge --only=clerk,staking
 ```
 
 ## Reset
@@ -60,7 +60,7 @@ To use specific services :
 If you want to reset the bridge server data, you can use the following command:
 
 ```bash
-./heimdalld unsafe-reset-all
+./odind unsafe-reset-all
 ```
 
 ## Common Issues (FAQ)

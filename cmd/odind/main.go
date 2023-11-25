@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 
-	"github.com/maticnetwork/heimdall/cmd/heimdalld/service"
+	"github.com/maticnetwork/heimdall/cmd/odind/service"
 )
 
 func main() {

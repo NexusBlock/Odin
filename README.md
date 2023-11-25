@@ -15,30 +15,30 @@ $ make install
 ```
 ### Init-heimdall 
 ```bash 
-$ heimdalld init
-$ heimdalld init --chain=mainnet        Will init with genesis.json for mainnet
-$ heimdalld init --chain=loki         Will init with genesis.json for loki
+$ odind init
+$ odind init --chain=mainnet        Will init with genesis.json for mainnet
+$ odind init --chain=loki         Will init with genesis.json for loki
 ```
 ### Run-heimdall 
 ```bash 
-$ heimdalld start
+$ odind start
 ```
 #### Usage
 ```
-$ heimdalld start                       Will start for mainnet by default
-$ heimdalld start --chain=mainnet       Will start for mainnet
-$ heimdalld start --chain=loki        Will start for loki
-$ heimdalld start --chain=local         Will start for local with NewSelectionAlgoHeight = 0
+$ odind start                       Will start for mainnet by default
+$ odind start --chain=mainnet       Will start for mainnet
+$ odind start --chain=loki        Will start for loki
+$ odind start --chain=local         Will start for local with NewSelectionAlgoHeight = 0
 ```
 
 ### Run rest server
 ```bash 
-$ heimdalld rest-server 
+$ odind rest-server 
 ```
 
 ### Run bridge
 ```bash 
-$ heimdalld bridge 
+$ odind bridge 
 ```
 
 ### Develop using Docker

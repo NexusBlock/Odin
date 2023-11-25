@@ -1,12 +1,12 @@
-Source: heimdalld-profile
+Source: odind-profile
 Version: 1.0.3
 Section: develop
 Priority: standard
 Maintainer: Polygon <release-team@polygon.technology>
 Build-Depends: debhelper-compat (= 13)
 Rules-Requires-Root: yes
-Package: heimdalld-profile
+Package: odind-profile
 Architecture: amd64
 Multi-Arch: foreign
 Depends:
-Description: This is the heimdalld package from Polygon Technology.
+Description: This is the odind package from Polygon Technology.

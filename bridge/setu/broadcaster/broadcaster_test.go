@@ -26,7 +26,7 @@ func TestBroadcastToHeimdall(t *testing.T) {
 	// cliCtx.BroadcastMode = client.BroadcastSync
 	// cliCtx.TrustNode = true
 
-	helper.InitHeimdallConfig(os.ExpandEnv("$HOME/.heimdalld"))
+	helper.InitHeimdallConfig(os.ExpandEnv("$HOME/.odind"))
 
 	_txBroadcaster := NewTxBroadcaster(cdc)
 

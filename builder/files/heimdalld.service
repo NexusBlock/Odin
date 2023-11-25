@@ -1,12 +1,12 @@
 [Unit]
-  Description=heimdalld
+  Description=odind
   StartLimitIntervalSec=500
   StartLimitBurst=5
 [Service]
   Restart=on-failure
   RestartSec=5s
   WorkingDirectory=/usr/local/bin
-  ExecStart=/usr/local/bin/heimdalld start --home /var/lib/heimdall \
+  ExecStart=/usr/local/bin/odind start --home /var/lib/heimdall \
     --chain=mainnet \
     --rest-server
   Type=simple

@@ -55,7 +55,7 @@ echo "New version is: $version"
 replaceVersion="Version: "$version
 replaceStandards="Standards-Version: v"$version
 fileArray=(
-    "${DIR}/../packaging/deb/heimdalld/DEBIAN/control"
+    "${DIR}/../packaging/deb/odind/DEBIAN/control"
     "${DIR}/../packaging/templates/package_scripts/control"
     "${DIR}/../packaging/templates/package_scripts/control.arm64"
     "${DIR}/../packaging/templates/package_scripts/control.profile.amd64"
@@ -70,7 +70,7 @@ for file in ${fileArray[@]}; do
 done
 
 fileArrayStandards=(
-    "${DIR}/../packaging/deb/heimdalld/DEBIAN/control"
+    "${DIR}/../packaging/deb/odind/DEBIAN/control"
     "${DIR}/../packaging/templates/package_scripts/control.validator"
     "${DIR}/../packaging/templates/package_scripts/control.validator.arm64"
 )
