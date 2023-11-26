@@ -10,8 +10,8 @@ import (
 	"github.com/nexusblock/heimdall/helper"
 	hmTypes "github.com/nexusblock/heimdall/types"
 
-	proto "github.com/nexusblock/polyproto/heimdall"
-	protoutils "github.com/nexusblock/polyproto/utils"
+	proto "github.com/nexusblock/nexusproto/odin"
+	protoutils "github.com/nexusblock/nexusproto/utils"
 	"google.golang.org/protobuf/types/known/emptypb"
 	"google.golang.org/protobuf/types/known/timestamppb"
 )
@@ -25,7 +25,7 @@ type Checkpoint struct {
 	TimeStamp  uint64                  `json:"timestamp"`
 }
 
-func (h *HeimdallGRPCServer) FetchCheckpointCount(ctx context.Context, in *emptypb.Empty) (*proto.FetchCheckpointCountResponse, error) {
+func (h *OdinGRPCServer) FetchCheckpointCount(ctx context.Context, in *emptypb.Empty) (*proto.FetchCheckpointCountResponse, error) {
 	cliCtx := cliContext.NewCLIContext().WithCodec(h.cdc)
 
 	result, err := helper.FetchFromAPI(cliCtx, helper.GetHeimdallServerEndpoint(fetchCheckpointCount))
@@ -45,7 +45,7 @@ func (h *HeimdallGRPCServer) FetchCheckpointCount(ctx context.Context, in *empty
 	return resp, nil
 }
 
-func (h *HeimdallGRPCServer) FetchCheckpoint(ctx context.Context, in *proto.FetchCheckpointRequest) (*proto.FetchCheckpointResponse, error) {
+func (h *OdinGRPCServer) FetchCheckpoint(ctx context.Context, in *proto.FetchCheckpointRequest) (*proto.FetchCheckpointResponse, error) {
 	cliCtx := cliContext.NewCLIContext().WithCodec(h.cdc)
 
 	url := ""

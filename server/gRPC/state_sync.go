@@ -8,7 +8,7 @@ import (
 
 	cliContext "github.com/cosmos/cosmos-sdk/client/context"
 	"github.com/nexusblock/heimdall/helper"
-	proto "github.com/nexusblock/polyproto/heimdall"
+	proto "github.com/nexusblock/nexusproto/odin"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 	"google.golang.org/protobuf/types/known/timestamppb"
@@ -24,7 +24,7 @@ type Event struct {
 	RecordTime string `json:"record_time"`
 }
 
-func (h *HeimdallGRPCServer) StateSyncEvents(req *proto.StateSyncEventsRequest, reply proto.Heimdall_StateSyncEventsServer) error {
+func (h *OdinGRPCServer) StateSyncEvents(req *proto.StateSyncEventsRequest, reply proto.Odin_StateSyncEventsServer) error {
 	cliCtx := cliContext.NewCLIContext().WithCodec(h.cdc)
 	fromId := req.FromID
 

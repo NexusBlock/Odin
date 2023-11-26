@@ -1,19 +1,7 @@
 package gRPC
 
 import (
-	"context"
-	"encoding/json"
-	"fmt"
-	"time"
-
-	cliContext "github.com/cosmos/cosmos-sdk/client/context"
-	"github.com/nexusblock/heimdall/helper"
 	hmTypes "github.com/nexusblock/heimdall/types"
-
-	proto "github.com/nexusblock/polyproto/heimdall"
-	protoutils "github.com/nexusblock/polyproto/utils"
-	"google.golang.org/protobuf/types/known/emptypb"
-	"google.golang.org/protobuf/types/known/timestamppb"
 )
 
 type Milestone struct {
@@ -25,7 +13,8 @@ type Milestone struct {
 	TimeStamp  uint64                  `json:"timestamp"`
 }
 
-func (h *HeimdallGRPCServer) FetchMilestoneCount(ctx context.Context, in *emptypb.Empty) (*proto.FetchMilestoneCountResponse, error) {
+/*
+func (h *OdinGRPCServer) FetchMilestoneCount(ctx context.Context, in *emptypb.Empty) (*proto.FetchMilestoneCountResponse, error) {
 	cliCtx := cliContext.NewCLIContext().WithCodec(h.cdc)
 
 	result, err := helper.FetchFromAPI(cliCtx, helper.GetHeimdallServerEndpoint(fetchMilestoneCount))
@@ -45,7 +34,7 @@ func (h *HeimdallGRPCServer) FetchMilestoneCount(ctx context.Context, in *emptyp
 	return resp, nil
 }
 
-func (h *HeimdallGRPCServer) FetchMilestone(ctx context.Context, in *emptypb.Empty) (*proto.FetchMilestoneResponse, error) {
+func (h *OdinGRPCServer) FetchMilestone(ctx context.Context, in *emptypb.Empty) (*proto.FetchMilestoneResponse, error) {
 	cliCtx := cliContext.NewCLIContext().WithCodec(h.cdc)
 
 	result, err := helper.FetchFromAPI(cliCtx, helper.GetHeimdallServerEndpoint(fetchMilestone))
@@ -83,7 +72,7 @@ func (h *HeimdallGRPCServer) FetchMilestone(ctx context.Context, in *emptypb.Emp
 	return resp, nil
 }
 
-func (h *HeimdallGRPCServer) FetchLastNoAckMilestone(ctx context.Context, in *emptypb.Empty) (*proto.FetchLastNoAckMilestoneResponse, error) {
+func (h *OdinGRPCServer) FetchLastNoAckMilestone(ctx context.Context, in *emptypb.Empty) (*proto.FetchLastNoAckMilestoneResponse, error) {
 	cliCtx := cliContext.NewCLIContext().WithCodec(h.cdc)
 
 	result, err := helper.FetchFromAPI(cliCtx, helper.GetHeimdallServerEndpoint(fetchLastNoAckMilestone))
@@ -104,7 +93,7 @@ func (h *HeimdallGRPCServer) FetchLastNoAckMilestone(ctx context.Context, in *em
 	return resp, nil
 }
 
-func (h *HeimdallGRPCServer) FetchNoAckMilestone(ctx context.Context, in *proto.FetchMilestoneNoAckRequest) (*proto.FetchMilestoneNoAckResponse, error) {
+func (h *OdinGRPCServer) FetchNoAckMilestone(ctx context.Context, in *proto.FetchMilestoneNoAckRequest) (*proto.FetchMilestoneNoAckResponse, error) {
 	cliCtx := cliContext.NewCLIContext().WithCodec(h.cdc)
 
 	url := fmt.Sprintf(fetchMilestoneNoAck, fmt.Sprint(in.MilestoneID))
@@ -127,7 +116,7 @@ func (h *HeimdallGRPCServer) FetchNoAckMilestone(ctx context.Context, in *proto.
 	return resp, nil
 }
 
-func (h *HeimdallGRPCServer) FetchMilestoneID(ctx context.Context, in *proto.FetchMilestoneIDRequest) (*proto.FetchMilestoneIDResponse, error) {
+func (h *OdinGRPCServer) FetchMilestoneID(ctx context.Context, in *proto.FetchMilestoneIDRequest) (*proto.FetchMilestoneIDResponse, error) {
 	cliCtx := cliContext.NewCLIContext().WithCodec(h.cdc)
 
 	url := fmt.Sprintf(fetchMilestoneID, fmt.Sprint(in.MilestoneID))
@@ -149,3 +138,4 @@ func (h *HeimdallGRPCServer) FetchMilestoneID(ctx context.Context, in *proto.Fet
 
 	return resp, nil
 }
+*/

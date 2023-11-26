@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/cosmos/cosmos-sdk/codec"
-	proto "github.com/nexusblock/polyproto/heimdall"
+	proto "github.com/nexusblock/nexusproto/odin"
 	tmLog "github.com/tendermint/tendermint/libs/log"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
@@ -27,19 +27,19 @@ const (
 
 var logger tmLog.Logger
 
-type HeimdallGRPCServer struct {
-	proto.UnimplementedHeimdallServer
+type OdinGRPCServer struct {
+	proto.UnimplementedOdinServer
 	cdc *codec.Codec
 }
 
 func SetupGRPCServer(shutDownCtx context.Context, cdc *codec.Codec, addr string, lggr tmLog.Logger) error {
 	logger = lggr
 	grpcServer := grpc.NewServer(withLoggingUnaryInterceptor())
-	proto.RegisterHeimdallServer(grpcServer,
-		&HeimdallGRPCServer{
-			cdc: cdc,
-		})
-
+	/*proto.UnimplementedOdinServer(grpcServer,
+	&OdinGRPCServer{
+		cdc: cdc,
+	})
+	*/
 	lis, err := net.Listen("tcp", addr)
 	if err != nil {
 		return err

@@ -8,11 +8,11 @@ import (
 	cliContext "github.com/cosmos/cosmos-sdk/client/context"
 	"github.com/nexusblock/heimdall/helper"
 	"github.com/nexusblock/heimdall/types"
-	proto "github.com/nexusblock/polyproto/heimdall"
-	protoutils "github.com/nexusblock/polyproto/utils"
+	proto "github.com/nexusblock/nexusproto/odin"
+	protoutils "github.com/nexusblock/nexusproto/utils"
 )
 
-func (h *HeimdallGRPCServer) Span(ctx context.Context, in *proto.SpanRequest) (*proto.SpanResponse, error) {
+func (h *OdinGRPCServer) Span(ctx context.Context, in *proto.SpanRequest) (*proto.SpanResponse, error) {
 	cliCtx := cliContext.NewCLIContext().WithCodec(h.cdc)
 	result, err := helper.FetchFromAPI(cliCtx, helper.GetHeimdallServerEndpoint(fmt.Sprintf(spanURL, in.ID)))
 

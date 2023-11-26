@@ -1672,8 +1672,8 @@ github.com/nexusblock/cosmos-sdk v0.37.5-0.20231005133937-b1eb1f90feb7 h1:jm7P9i
 github.com/nexusblock/cosmos-sdk v0.37.5-0.20231005133937-b1eb1f90feb7/go.mod h1:N3NySXu6ob1GKEJSUwp3vE2Ri9G1vzk0T0tNGodTBoU=
 github.com/nexusblock/kernel v1.0.4 h1:nLKreyp6+vgPUF4QezCa6rC9Vw9nRJ5o65f7+ydLeYo=
 github.com/nexusblock/kernel v1.0.4/go.mod h1:HzDbqdJMBJMIF7b3yxaeWGU6vEIrCZkIouGhJ1q3Ybc=
-github.com/nexusblock/polyproto v0.0.3 h1:okoqqMw+HETJrCZpmV+rtpaI8wL1EIhZgjkTt0+nBXs=
-github.com/nexusblock/polyproto v0.0.3/go.mod h1:Tg6UZ9Igqby6j7yIMymRGAN933wlhT40zAxmnVNMDK8=
+github.com/nexusblock/nexusproto v0.0.6 h1:jkxEA1y17JOAxl5wf4uV/R5cSYAiza+bBuMYyJPNmBc=
+github.com/nexusblock/nexusproto v0.0.6/go.mod h1:cZR8TQ7XJITuu9enJf5RWnXeVejuxu2jnduxvQeEBbg=
 github.com/nexusblock/tendermint v0.26.0-dev0.0.20231005133805-2bb6a831bb2e h1:NfbbmimDdqTVJ5clBr02Rp2LSaHORDx79iHlDgzOdHk=
 github.com/nexusblock/tendermint v0.26.0-dev0.0.20231005133805-2bb6a831bb2e/go.mod h1:D2fcnxGk6bje+LoPwImuKSSYLiK7/G06IynGNDSEcJk=
 github.com/niemeyer/pretty v0.0.0-20200227124842-a10e7caefd8e/go.mod h1:zD1mROLANZcx1PVRCS0qkT7pwLkGfwJo4zjcN/Tysno=
